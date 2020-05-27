@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    margin: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+        p {
+            color: #999;
+        }
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+
+            p {
+                font-size: 14px;
+            }
+            a {
+                font-size: 14px;
+            }
+    }
+
+    .chemin {
+        display: inline-block;
+            a {
+                text-decoration: none;
+                color: #999;
+            }
+        
+        .circle {
+            display: inline-block;
+            position: relative;
+            margin: 0 8px;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: #999;
+            top: -2px;
+        }
+        p {
+            display: inline-block;
+            color: #333;
+        }
+    }
+
+    .fenetre {
+        width: 280px;
+        height: 280px;
+        transform: rotate(-90deg);
+        transform-origin: right top;
+        overflow: auto;
+        margin: 10px 10px;
+            .défilement {
+                transform: rotate(90deg) ;
+                transform-origin: right top;
+                width: 260px;
+                height: 260px;
+                display: inline;
+                float: left;
+            }
+        }
+}
