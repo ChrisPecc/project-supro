@@ -668,8 +668,9 @@ pour téléphone */
     width: 100%;
     height: auto; }
   .kcsection {
-    background-color: magenta;
     border: 1px solid black; }
-  .picturerow {
-    background-color: #dac7eb;
-    border: 1px solid black; } }
+  .picturerow .prpic {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; } }

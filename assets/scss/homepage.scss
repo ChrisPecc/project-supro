@@ -1122,12 +1122,16 @@ pour téléphone */
     }
 
     .kcsection {
-        background-color: magenta;
+        
         border: 1px solid black;
     }
 
     .picturerow {
-        background-color: rgb(218, 199, 235);
-        border: 1px solid black;
+        .prpic {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     }
 }
