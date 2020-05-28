@@ -262,28 +262,113 @@ body {
 
     .color {
         margin-top: 10%;
+        margin-bottom: 5%;
 
         h4 {
             color: #333;
             font-size:12px ;
+            margin-bottom: 3%;
         }
 
-        .circleblue {
+        .blue {
             display: inline-block;
             position: relative;
             margin-right: 8px;
             height: 15px;
             width: 15px;
             border-radius: 50%;
-            background-color: rgb(87, 96, 224);
             border: solid 2px rgb(214, 211, 211);
-                &.brown {
-                    background-color: rgb(133, 67, 23);
-                }
-                &.red {
-                    background-color: rgb(187, 51, 51);
+            background-color: rgb(87, 96, 224);
+                &:hover {
+                    background-color: rgb(143, 149, 229);
                 }
         }
+        .brown {
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: solid 2px rgb(214, 211, 211);
+            background-color: rgb(187, 94, 57);
+                &:hover {
+                    background-color: rgb(207, 128, 96);
+                }
+        }
+        .red {
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: solid 2px rgb(214, 211, 211);
+            background-color: rgb(233, 70, 70);
+                &:hover {
+                    background-color: rgb(230, 113, 113);
+                }
+        }
+    }
+
+    .size {
+        margin-bottom: 10%;
+        h4 {
+            color: #333;
+            font-size: 12px;
+        }
+        button {
+            color: #999;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline: inherit;
+            font-size: 12px;
+            margin-right: 10px;
+            margin-right: 8px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color:rgb(220, 220, 220);
+                &:hover {
+                    background-color: #f68773;
+                    color: white;
+                }
+        }        
+    }
+
+    .custom-qty {
+        color: #999;
+        box-sizing: border-box;
+        position: relative;
+
+        #quantity {
+            width: 90vw;
+            height: 40px;
+            border:2px solid rgb(190, 189, 189);
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            display: inline-block;
+        }
+        .up-qty {
+            cursor: pointer;
+            box-sizing: border-box;
+            position: absolute;
+            text-align: center;
+            right: 25px;
+            margin-top: -27px;
+        }
+        .down-qty {
+            cursor: pointer;
+            box-sizing: border-box;
+            position: absolute;
+            text-align: center;
+            left: 25px;
+            margin-top: -27px;
+        }
+
+
     }
 
     .infos {
