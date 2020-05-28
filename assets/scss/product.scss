@@ -1,34 +1,170 @@
 body {
-    box-sizing: border-box;
-    margin: 10px 15px;
+    
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
         p {
             color: #999;
         }
 }
+/*----------- début Barre de navigation----------------*/
+/*.header {
+    padding: 0px 50px;
+    border-bottom: 1px solid #ececec;
+}
 
+.logo {
+    padding: 26px 15px 30px;
+}
 
+.nav-menu {
+    padding: 40px;
+}
+
+.search {
+    position:relative;
+    box-sizing: content-box;
+    max-width: 80%;
+    border: 1px solid #d1cfcf;
+    padding: 8px;
+    margin-top: 30px;
+    border-radius: 25px;
+
+    input {
+        border: none;
+        position:absolute; 
+        left:15px; 
+    }
+
+    i {
+        margin-right: 20px;
+        color: #d1cfcf;
+    }
+
+    ::placeholder {
+        color: #d1cfcf;
+    }
+}
+
+.icon {
+    margin-top: 38px;
+    padding-left: 30px;
+
+    li {
+        margin: 0 10px;
+    }
+
+    i {
+        color: #949799;
+        font-weight: 550;
+        font-size: 20px;
+    }
+} */
+/*-----------Fin Barre de navigation----------------*/
 
 @media screen and (max-width: 320px) {
 
+    main {
+        width: 90vw;
+
+    }
+    article {
+        width: 90vw;
+
+    }
+    section {
+        width: 90vw;
+
+    }
+
     body {
+        width: 100vw;
+        padding: 3% 3%;
         display: grid;
         grid-template-columns: 1fr;
 
-            p {
-                font-size: 14px;
-            }
+
             a {
                 font-size: 14px;
+
+            }
+
+            li {
+                font-size: 14px;
+                color: #999;
+                width: 90vw;
+                
+                margin-left: -5%;
+            }
+            h3 {
+                font-size: 12px;
+                color: #333;
             }
     }
 
+   /* .header {
+        padding: 0px 20px;
+        border-bottom: 1px solid #ececec;
+    }
+    
+    .logo {
+        padding: 20px 10px;
+    }
+    
+    .nav-menu {
+        padding: 20px;
+    }
+    
+    .search {
+        position:relative;
+        box-sizing: content-box;
+        max-width: 80%;
+        border: 1px solid #d1cfcf;
+        padding: 8px;
+        margin-top: 10px;
+        border-radius: 15px;
+    
+        input {
+            border: none;
+            position:absolute; 
+            left:15px; 
+        }
+    
+        i {
+            margin-right: 20px;
+            color: #d1cfcf;
+        }
+    
+        ::placeholder {
+            color: #d1cfcf;
+        }
+    }
+    
+    .icon {
+        margin-top: 38px;
+        padding-left: 30px;
+    
+        li {
+            margin: 0 10px;
+        }
+    
+        i {
+            color: #949799;
+            font-weight: 550;
+            font-size: 20px;
+        }
+    } */
+
+
+
     .chemin {
+
         display: inline-block;
-            a {
-                text-decoration: none;
-                color: #999;
-            }
+        margin-bottom: 4%;
+
+        a {
+            text-decoration: none;
+            color: #999;
+        }
         
         .circle {
             display: inline-block;
@@ -40,26 +176,131 @@ body {
             background-color: #999;
             top: -2px;
         }
+
         p {
-            display: inline-block;
+            display: inline;
             color: #333;
         }
     }
 
-    .fenetre {
-        width: 280px;
-        height: 280px;
-        transform: rotate(-90deg);
-        transform-origin: right top;
+
+/* images sac à dos */
+    .défilement {
+        white-space: nowrap;
+        width: 90vw;
         overflow: auto;
-        margin: 10px 10px;
-            .défilement {
-                transform: rotate(90deg) ;
-                transform-origin: right top;
-                width: 260px;
-                height: 260px;
-                display: inline;
-                float: left;
+
+
+        img {
+            display: inline-block;
+            width: 90vw;
+        }
+        .fleche {
+            position: absolute;
+            color: white;
+            padding-top: 45vw;
+            padding-left: 75vw;
+            font-size: 10vw;
+        }
+            
+    }
+
+    .under {
+        width: 90vw;
+        margin-top: 1vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        img{
+            width: 27vw;
+        }
+    }
+
+    .description-produit {
+            
+        margin-top: 10%;;
+        font-size: 10px;
+        color: #f68773;
+
+        .review {
+            display: inline;
+            margin-left: 3%;
+            font-size: 10px;
+                &:hover {
+                    color: #f68773;
+                }
+        }
+
+        .référence {
+            p {
+                font-size: 8px;
             }
         }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 15px;
+            color: #333;
+                .oldprice {
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: #999;
+                    text-decoration: line-through ;
+                }
+        }
+
+        p:last-child {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+
+    .color {
+        margin-top: 10%;
+
+        h4 {
+            color: #333;
+            font-size:12px ;
+        }
+
+        .circleblue {
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: rgb(87, 96, 224);
+            border: solid 2px rgb(214, 211, 211);
+                &.brown {
+                    background-color: rgb(133, 67, 23);
+                }
+                &.red {
+                    background-color: rgb(187, 51, 51);
+                }
+        }
+    }
+
+    .infos {
+
+        width: 90vw;
+
+            
+
+        img {
+            width: 90vw;
+        }
+    }
+
+    .product {
+
+        img {
+            width: 90vw;
+        }
+    }
 }
