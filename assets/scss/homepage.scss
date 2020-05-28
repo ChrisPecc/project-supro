@@ -355,7 +355,7 @@ pour téléphone */
     .tssection {
         .tspic1 {
             display: block;
-            width: 70vw;
+            width: 70%;
             height: auto;          
         }
 
@@ -689,7 +689,7 @@ pour téléphone */
 
     .tssection {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         width: 100%;
         overflow: visible;
 
@@ -897,9 +897,24 @@ pour téléphone */
     }
 
     #dealoftheday {
-        height: 400px;
-        background-color: green;
-        border: 1px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 17.5%;
+        padding-right: 17.5%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        height: auto;
+        background-image: url(../pictures/homepage/deals_image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+
+        .timer {
+            display: block;
+            width: 50%;
+            height: 80px;
+            background-color: white;
+        }
     }
 
     #global2 {
@@ -1056,9 +1071,46 @@ pour téléphone */
             
     }
 
-    .tssection {
-        background-color: cyan;
-        border: 1px solid black;
+    .tssectionbig2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .tspic1 {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: -10%;           
+        }
+
+        .ts001txt {
+            display: inline-block;
+            z-index: 10;
+        }
+    }
+
+    .tssectionbig1 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        overflow: visible;
+
+        .tspic2 {
+            display: inline-block;
+            width: 80%;
+            height: auto;
+            
+            margin-left: -10%;
+        }
+
+        .ts001text {
+            display: inline-block;
+            z-index: 10;
+            width: 30%;
+            
+        }
+
+        
     }
 
     .lnsection {
