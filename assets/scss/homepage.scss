@@ -78,7 +78,7 @@ pour téléphone */
 
         #topbox001 {
             display: none;
-            background-image: url(pictures/homepage/abc.jpg);
+            background-image: url(../pictures/homepage/abc.jpg);
             background-repeat: no-repeat;
             background-position: bottom left;
             background-attachment: fixed;
@@ -108,6 +108,7 @@ pour téléphone */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            
         }
 
         #topbox005 {
@@ -126,7 +127,7 @@ pour téléphone */
         #topsellers {
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: repeat(4, 350px);
+            grid-template-rows: repeat(4, auto);
 
             #ts001 {
                 grid-row-start: 1;
@@ -149,7 +150,7 @@ pour téléphone */
         #newarrival {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: repeat(3, 200px);
+            grid-template-rows: auto;
 
             #na001 {
                 display: none;
@@ -209,9 +210,25 @@ pour téléphone */
 
     #dealoftheday {
         margin: 20px;
-        height: 300px;
-        background-color: green;
-        border: 1px solid black;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left : 5%;
+        padding-right: 5%;
+        height: auto;
+        background-image: url(../pictures/homepage/deals_image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 45%;
+        
+
+        .timer {
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 80px;
+            background-color: white;
+        }
     }
 
     #global2 {
@@ -220,7 +237,7 @@ pour téléphone */
 
         #latestnews {
             display: grid;
-            grid-template-rows: repeat(3, 300px);
+            grid-template-rows: auto;
             grid-template-columns: auto;
 
             #ln001 {
@@ -250,7 +267,7 @@ pour téléphone */
 
         #keepconnected {
             display: grid;
-            grid-template-rows: repeat(2, 125px);
+            grid-template-rows: auto;
             margin-top: 20px;
             margin-bottom: 20px;
 
@@ -266,8 +283,10 @@ pour téléphone */
 
     #bottompics {
         margin: 20px;
+        width: calc(100%-40px);
         display: grid;
-        grid-template-rows: 100px;
+        grid-template-rows: auto;
+        overflow: hidden;
         grid-template-columns: repeat(3, 1fr);
         
 
@@ -333,29 +352,51 @@ pour téléphone */
     
     }
 
-    .test2 {
-        background-color: teal;
-        border: 1px solid black;
+    .tssection {
+        .tspic1 {
+            display: block;
+            width: 70vw;
+            height: auto;          
+        }
+
+        .tspic2 {
+            display: block;
+            width: 100%;
+            height: auto; 
+        }
+
+        
     }
 
-    .test3 {
-        background-color: cyan;
-        border: 1px solid black;
+    .nasection {
+        .napic {
+            display: block;
+            width: 80%;
+            height: auto;
+        }
     }
 
-    .test4 {
-        background-color: yellow;
-        border: 1px solid black;
+    
+
+    .lnsection {
+        .lnpic {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .test5 {
-        background-color: magenta;
+    .kcsection {
         border: 1px solid black;
     }
 
     .picturerow {
-        background-color: rgb(218, 199, 235);
-        border: 1px solid black;
+        .prpic {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     }
 }
 
@@ -379,31 +420,45 @@ pour téléphone */
         grid-template-columns: auto;
         grid-template-rows: 100vh repeat(3, 300px);
 
-        #sneakerpic {
-            grid-row: 1 / 2;
-            grid-column: 1 / 2;
-        }
 
         #topbox001 {
             display: none;
+            background-image: url(../pictures/homepage/abc.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-attachment: fixed;
+            background-size: cover;
         }
 
         #topbox002 {
             grid-row: 1 / 2;
             grid-column: 1 / 2;
-            z-index: 10;
+            background-image: url(../pictures/homepage/abc.jpg);
+            background-size: cover;
         }
 
         #topbox003 {
             grid-row: 2 / 3;
+            background-image: url(../pictures/homepage/banner_h1_1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top right;
         }
 
         #topbox004 {
             grid-row: 3 / 4;
+            background-image: url(../pictures/homepage/banner_h1_2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         #topbox005 {
             grid-row: 4 / 5;
+            background-image: url(../pictures/homepage/banner_h1_3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top left;
         }
     }
 
@@ -414,7 +469,7 @@ pour téléphone */
         #topsellers {
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: repeat(2, 400px);
+            grid-template-rows: auto;
 
             #ts001 {
                 display: none;
@@ -436,7 +491,7 @@ pour téléphone */
         #newarrival {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: repeat(2, 400px);
+            grid-template-rows: auto;
 
             #na001 {
                 display: none;
@@ -493,9 +548,24 @@ pour téléphone */
     }
 
     #dealoftheday {
-        height: 400px;
-        background-color: green;
-        border: 1px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        height: auto;
+        background-image: url(../pictures/homepage/deals_image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+
+        .timer {
+            display: block;
+            width: 60%;
+            height: 80px;
+            background-color: white;
+        }
     }
 
     #global2 {
@@ -504,7 +574,7 @@ pour téléphone */
 
         #latestnews {
             display: grid;
-            grid-template-rows: 500px 300px;
+            grid-template-rows: auto;
             grid-template-columns: 50% 50%;
 
             #ln001 {
@@ -554,10 +624,11 @@ pour téléphone */
     #bottompics {
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 100%;
         display: grid;
-        grid-template-rows: 100px;
+        grid-template-rows: auto;
         grid-template-columns: repeat(5, 1fr);
-        
+    
 
         #bp001 {
             display: none;
@@ -571,7 +642,7 @@ pour téléphone */
             grid-column: 1 / 2 ;
         }
 
-          #bp004 {
+        #bp004 {
             grid-column: 2 / 3;
         }
 
@@ -616,35 +687,58 @@ pour téléphone */
         }
     }
 
-    .topsection {
-        background-color: red;
-        border: 1px solid black;
-    
+    .tssection {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: visible;
+
+        .tspic2 {
+            display: inline-block;
+            width: 80%;
+            height: auto;
+            
+            margin-left: -10%;
+        }
+
+        .ts001text {
+            display: inline-block;
+            z-index: 10;
+            width: 30%;
+            
+        }
+
+        
     }
 
-    .test2 {
-        background-color: teal;
-        border: 1px solid black;
+    .nasection {
+        .napic {
+            display: block;
+            width: 80%;
+            height: auto;
+        }
     }
 
-    .test3 {
-        background-color: cyan;
-        border: 1px solid black;
+    .lnsection {
+        
+        .lnpic {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .test4 {
-        background-color: yellow;
-        border: 1px solid black;
-    }
-
-    .test5 {
-        background-color: magenta;
+    .kcsection {
         border: 1px solid black;
     }
 
     .picturerow {
-        background-color: rgb(218, 199, 235);
-        border: 1px solid black;
+        .prpic {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     }
 }
 
@@ -672,7 +766,10 @@ pour téléphone */
         #topbox001 {
             grid-row: 1 / 2;
             grid-column: 1 / 4;
-            z-index: 10;
+            background-image: url(../pictures/homepage/abc.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: cover;
         }
 
         #topbox002 {
@@ -682,16 +779,28 @@ pour téléphone */
         #topbox003 {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
+            background-image: url(../pictures/homepage/banner_h1_1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top right;
         }
 
         #topbox004 {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
+            background-image: url(../pictures/homepage/banner_h1_2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         #topbox005 {
             grid-column: 3 / 4;
             grid-row: 2 / 3;
+            background-image: url(../pictures/homepage/banner_h1_3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top left;
         }
     }
 
@@ -703,7 +812,7 @@ pour téléphone */
         #topsellers {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 300px);
+            grid-template-rows: auto;
 
             #ts001 {
                 grid-column: 1 / 2;
@@ -729,7 +838,7 @@ pour téléphone */
         #newarrival {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 400px);
+            grid-template-rows: auto;
 
             #na001 {
                 grid-column: 1 / 2;
@@ -800,7 +909,7 @@ pour téléphone */
 
         #latestnews {
             display: grid;
-            grid-template-rows: 350px;
+            grid-template-rows: auto;
             grid-template-columns: repeat(3, 1fr);
 
             #ln001 {
@@ -848,7 +957,7 @@ pour téléphone */
         margin-top: 20px;
         margin-bottom: 20px;
         display: grid;
-        grid-template-rows: 100px;
+        grid-template-rows: auto;
         grid-template-columns: repeat(7, 1fr);
         
 
@@ -915,22 +1024,52 @@ pour téléphone */
     
     }
 
-    .test2 {
-        background-color: teal;
-        border: 1px solid black;
+    .nasection {
+        .napic {
+            display: block;
+            width: 80%;
+            height: auto;
+        }
+
+        .blue {
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: solid 2px rgb(214, 211, 211);
+            background-color: rgb(87, 96, 224);
+        }
+
+        .red {
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: solid 2px rgb(214, 211, 211);
+            background-color: rgb(255, 67, 67);
+        }
+
+            
     }
 
-    .test3 {
+    .tssection {
         background-color: cyan;
         border: 1px solid black;
     }
 
-    .test4 {
-        background-color: yellow;
-        border: 1px solid black;
+    .lnsection {
+        .lnpic {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .test5 {
+    .kcsection {
         background-color: magenta;
         border: 1px solid black;
     }
