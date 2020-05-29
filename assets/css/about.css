@@ -144,6 +144,7 @@ background-size: 15%;
 
 .ablkqt
 {
+  color: black;
   font-style: italic;
   font-size: 18px;
   font-weight: bold;
@@ -152,46 +153,172 @@ background-size: 15%;
   left: 0;
 }
 
+.asmlcps2
+{
+  font-variant: small-caps;
+  color: #f68773;
+  margin-bottom: 0;
+}
+
+.ajobfct
+{
+  color: #C1C1C1;
+  font-size: 9px;
+  margin-top: 0;
+}
+
+.abig
+{
+  padding-left: 260px;
+}
+
+.alorem
+{
+  padding-top: 30px;
+}
+
 .adates {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%; }
+  grid-template-rows: 50% 50%;
+  padding-left: 50px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+}
+
+.ayear
+{
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.adesc
+{
+ position: relative;
+  top: -10px;
+}
 
 .adrama {
-  height: 500px;
+  margin-right: 300px;
+  margin-left: 300px;
+  height: 400px;
   background-image: url(../pictures/about/video-img.jpg);
   background-size: cover;
   text-align: center; }
 
+.awork
+{
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+  padding-top: 100px;
+}
+
+.anodrama
+{
+  position: relative;
+  top: -10px;
+  font-size: 44px;
+  color: white;
+  font-weight: bold;
+}
+
+.aplay
+{width: 50px;}
+
 .afree {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-right: 300px;
+  margin-left: 300px; 
+}
+
+.afreeitem
+{
+  min-width: 150px;
+}
 
 .afreeitem img {
-  height: 20px;
-  float: left; }
+  height: 25px;
+  float: left;
+  padding-right: 10px; }
+
+.afreedsc
+{
+  font-size: 10px;
+}
+
+.asmlcps3
+{
+  font-variant: small-caps;
+  letter-spacing: 0em;
+  font-size: 10px;
+  color: black;
+}
+
+.divbiglt
+{
+  margin-top: 100px;
+}
 
 .abiglt {
-  font-weight: 400;
+  color: black;
   line-height: 1.5;
-  font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500; }
 
 .atwocln {
+  margin-top: 50px;
+  margin-right: 300px;
+  margin-left: 300px;
   display: flex;
   flex-direction: row; }
 
 .lm {
+  margin-top: 50px;
   text-align: center; }
 
 .amemb {
+  margin-top: 50px;
+  margin-right: 300px;
+  margin-left: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
+.amembit img
+{
+  max-width: 250px;
+}  
+
 .alogo {
+  margin-top: 100px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-top: 82px;
+  padding-bottom: 82px;
   background-color: #F6F6F8; }
+
+.alogoitm
+{
+  width: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  height: 70px;
+  text-align: center;
+}
+
+.alogoitm img
+{
+  max-width: 100px;
+}
