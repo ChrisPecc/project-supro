@@ -178,62 +178,62 @@ body {
       color: #333;
       font-size: 14px; }
   /* images sac à dos */
-  .défilement {
+  .photo-description .imageproduit .défilement {
     white-space: nowrap;
     width: 90vw;
     overflow: auto; }
-    .défilement img {
+    .photo-description .imageproduit .défilement img {
       display: inline-block;
       width: 90vw; }
-    .défilement .fleche {
+    .photo-description .imageproduit .défilement .fleche {
       position: absolute;
       color: white;
       padding-top: 45vw;
       padding-left: 75vw;
       font-size: 10vw; }
-  .under {
+  .photo-description .imageproduit .under {
     width: 90vw;
     margin-top: 1vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row; }
-    .under img {
+    .photo-description .imageproduit .under img {
       width: 27vw; }
-  .description-produit {
+  .photo-description .infos-image .description-produit {
     margin-top: 10%;
     font-size: 10px;
     color: #f68773; }
-    .description-produit .review {
+    .photo-description .infos-image .description-produit .review {
       cursor: pointer;
       display: inline;
       margin-left: 3%;
       font-size: 10px; }
-      .description-produit .review:hover {
+      .photo-description .infos-image .description-produit .review:hover {
         color: #f68773; }
-    .description-produit .référence p {
+    .photo-description .infos-image .description-produit .référence p {
       font-size: 8px; }
-    .description-produit h2 {
+    .photo-description .infos-image .description-produit h2 {
       font-size: 18px;
       color: #333; }
-    .description-produit .price {
+    .photo-description .infos-image .description-produit .price {
       font-size: 15px;
       color: #333; }
-      .description-produit .price .oldprice {
+      .photo-description .infos-image .description-produit .price .oldprice {
         font-size: 17px;
         font-weight: 600;
         color: #999;
         text-decoration: line-through; }
-    .description-produit p:last-child {
+    .photo-description .infos-image .description-produit p:last-child {
       font-size: 12px;
       font-weight: 600; }
-  .color {
+  .photo-description .infos-image .color {
     margin-top: 10%;
     margin-bottom: 5%; }
-    .color h4 {
+    .photo-description .infos-image .color h4 {
       color: #333;
       font-size: 12px;
       margin-bottom: 3%; }
-    .color .blue {
+    .photo-description .infos-image .color .blue {
       display: inline-block;
       position: relative;
       margin-right: 8px;
@@ -242,9 +242,9 @@ body {
       border-radius: 50%;
       border: solid 2px #d6d3d3;
       background-color: #5760e0; }
-      .color .blue:hover {
+      .photo-description .infos-image .color .blue:hover {
         background-color: #8f95e5; }
-    .color .brown {
+    .photo-description .infos-image .color .brown {
       display: inline-block;
       position: relative;
       margin-right: 8px;
@@ -253,9 +253,9 @@ body {
       border-radius: 50%;
       border: solid 2px #d6d3d3;
       background-color: #bb5e39; }
-      .color .brown:hover {
+      .photo-description .infos-image .color .brown:hover {
         background-color: #cf8060; }
-    .color .red {
+    .photo-description .infos-image .color .red {
       display: inline-block;
       position: relative;
       margin-right: 8px;
@@ -264,14 +264,14 @@ body {
       border-radius: 50%;
       border: solid 2px #d6d3d3;
       background-color: #e94646; }
-      .color .red:hover {
+      .photo-description .infos-image .color .red:hover {
         background-color: #e67171; }
-  .size {
+  .photo-description .infos-image .size {
     margin-bottom: 10%; }
-    .size h4 {
+    .photo-description .infos-image .size h4 {
       color: #333;
       font-size: 12px; }
-    .size button {
+    .photo-description .infos-image .size button {
       color: #999;
       border: none;
       padding: 0;
@@ -284,68 +284,78 @@ body {
       width: 20px;
       border-radius: 50%;
       background-color: gainsboro; }
-      .size button:hover {
+      .photo-description .infos-image .size button:hover {
         background-color: #f68773;
         color: white; }
-  .custom-qty {
-    color: #999;
-    box-sizing: border-box;
-    position: relative; }
-    .custom-qty #quantity {
-      width: 90vw;
-      height: 40px;
-      border: 2px solid #bebdbd;
-      text-align: center;
-      font-size: 15px;
-      font-weight: 700;
-      display: inline-block; }
-    .custom-qty .up-qty {
-      cursor: pointer;
-      box-sizing: border-box;
-      position: absolute;
-      text-align: center;
-      right: 25px;
-      margin-top: -27px; }
-    .custom-qty .down-qty {
-      cursor: pointer;
-      box-sizing: border-box;
-      position: absolute;
-      text-align: center;
-      left: 25px;
-      margin-top: -27px; }
-  .validation {
+  .photo-description .infos-image .resize-validatio {
     display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 5%; }
-    .validation button {
-      background-color: #333;
-      color: #d6d3d3;
-      width: 73vw;
-      height: 40px;
-      border: none;
-      text-transform: uppercase;
-      font-weight: 600; }
-      .validation button:hover {
-        background-color: #f68773; }
-      .validation button.now {
+    flex-direction: column; }
+    .photo-description .infos-image .resize-validatio .custom-qty {
+      color: #999; }
+      .photo-description .infos-image .resize-validatio .custom-qty #quantity {
         width: 90vw;
-        margin-bottom: 5%; }
-    .validation .fond-icone {
-      width: 36px;
-      height: 36px;
-      border: 2px solid #cfcece;
-      color: #999;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .validation .fond-icone:hover {
-        width: 40px;
         height: 40px;
-        background-color: #f68773;
+        border: 2px solid #bebdbd;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700; }
+      .photo-description .infos-image .resize-validatio .custom-qty .up-qty {
+        cursor: pointer;
+        position: absolute;
+        text-align: center;
+        right: 25px;
+        margin-top: -27px; }
+      .photo-description .infos-image .resize-validatio .custom-qty .down-qty {
+        cursor: pointer;
+        position: absolute;
+        text-align: center;
+        left: 25px;
+        margin-top: -27px; }
+    .photo-description .infos-image .resize-validatio .validation {
+      padding-top: 10px;
+      padding-bottom: 5%; }
+      .photo-description .infos-image .resize-validatio .validation .before {
+        background-color: #333;
+        color: #d6d3d3;
+        width: 73vw;
+        height: 40px;
         border: none;
-        color: gainsboro; }
-  .category {
+        text-transform: uppercase;
+        font-weight: 600; }
+        .photo-description .infos-image .resize-validatio .validation .before:hover {
+          background-color: #f68773; }
+    .photo-description .infos-image .resize-validatio .position-love {
+      display: flex;
+      justify-content: right;
+      margin-top: -52px;
+      margin-bottom: 10px; }
+      .photo-description .infos-image .resize-validatio .position-love .icone-love {
+        width: 36px;
+        height: 36px;
+        border: 2px solid #cfcece;
+        color: #999;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .photo-description .infos-image .resize-validatio .position-love .icone-love:hover {
+          width: 40px;
+          height: 40px;
+          background-color: #f68773;
+          border: none;
+          color: gainsboro; }
+  .photo-description .infos-image .btn-buy .now {
+    font-size: 12px;
+    width: 90vw;
+    background-color: #333;
+    color: #d6d3d3;
+    height: 35px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0%; }
+    .photo-description .infos-image .btn-buy .now:hover {
+      background-color: #f68773; }
+  .photo-description .infos-image .category {
     height: 140px;
     margin-top: 4%;
     margin-bottom: 5%;
@@ -355,18 +365,18 @@ body {
     border-bottom: solid 1px #c9c9c9;
     font-size: 12px;
     font-weight: 600; }
-    .category .littleblackword {
+    .photo-description .infos-image .category .littleblackword {
       color: #333;
       text-transform: uppercase; }
-    .category .icone-social {
+    .photo-description .infos-image .category .icone-social {
       margin-left: 4%;
       margin-top: 20px; }
-    .category a {
+    .photo-description .infos-image .category a {
       color: #333;
       font-size: 18px; }
-      .category a:hover {
+      .photo-description .infos-image .category a:hover {
         color: #f68773; }
-    .category .fab {
+    .photo-description .infos-image .category .fab {
       padding-right: 15px; }
   .infos {
     width: 80vw;
@@ -710,14 +720,14 @@ body {
           cursor: pointer;
           position: absolute;
           text-align: center;
-          margin-left: 27%;
+          margin-left: 12%;
           margin-top: -22px;
           font-size: 12px; }
         .photo-description .infos-image .resize-validatio .custom-qty .down-qty {
           cursor: pointer;
           position: absolute;
           text-align: center;
-          left: 5%;
+          left: 52%;
           margin-top: -22px;
           font-size: 12px; }
       .photo-description .infos-image .resize-validatio .validation {
@@ -766,7 +776,6 @@ body {
       padding-top: 3%;
       padding-bottom: 3%;
       border-top: solid 1px #c9c9c9;
-      border-bottom: solid 1px #c9c9c9;
       font-size: 12px;
       font-weight: 600; }
       .photo-description .infos-image .category .littleblackword {
@@ -784,7 +793,8 @@ body {
         padding-right: 15px; }
   .infos {
     width: 80vw;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-top: solid 1px #c9c9c9; }
     .infos .menu-description {
       height: 100px;
       border-bottom: solid 1px #c9c9c9;

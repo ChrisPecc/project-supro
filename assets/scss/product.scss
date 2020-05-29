@@ -202,267 +202,294 @@ body {
         }
     }
 
-
 /* images sac à dos */
-    .défilement {
-        white-space: nowrap;
-        width: 90vw;
-        overflow: auto;
+
+    .photo-description {
 
 
-        img {
-            display: inline-block;
-            width: 90vw;
-        }
-        .fleche {
-            position: absolute;
-            color: white;
-            padding-top: 45vw;
-            padding-left: 75vw;
-            font-size: 10vw;
-        }
-            
-    }
+        .imageproduit {
 
-    .under {
-        width: 90vw;
-        margin-top: 1vw;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+            .défilement {
+                white-space: nowrap;
+                width: 90vw;
+                overflow: auto;
 
-        img{
-            width: 27vw;
-        }
-    }
-
-    .description-produit {
-            
-        margin-top: 10%;;
-        font-size: 10px;
-        color: #f68773;
-
-        .review {
-            cursor: pointer;
-            display: inline;
-            margin-left: 3%;
-            font-size: 10px;
-                &:hover {
-                    color: #f68773;
+                img {
+                    display: inline-block;
+                    width: 90vw;
                 }
-        }
+                .fleche {
+                    position: absolute;
+                    color: white;
+                    padding-top: 45vw;
+                    padding-left: 75vw;
+                    font-size: 10vw;
+                }
+            }
 
-        .référence {
-            p {
-                font-size: 8px;
+            .under {
+                width: 90vw;
+                margin-top: 1vw;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
+                img{
+                    width: 27vw;
+                }
             }
         }
 
-        h2 {
-            font-size: 18px;
-            color: #333;
-        }
+        .infos-image {
 
-        .price {
-            font-size: 15px;
-            color: #333;
-                .oldprice {
-                    font-size: 17px;
+            .description-produit {
+                    
+                margin-top: 10%;;
+                font-size: 10px;
+                color: #f68773;
+
+                .review {
+                    cursor: pointer;
+                    display: inline;
+                    margin-left: 3%;
+                    font-size: 10px;
+                        &:hover {
+                            color: #f68773;
+                        }
+                }
+
+                .référence {
+                    p {
+                        font-size: 8px;
+                    }
+                }
+
+                h2 {
+                    font-size: 18px;
+                    color: #333;
+                }
+
+                .price {
+                    font-size: 15px;
+                    color: #333;
+                        .oldprice {
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: #999;
+                            text-decoration: line-through ;
+                        }
+                }
+
+                p:last-child {
+                    font-size: 12px;
                     font-weight: 600;
+                }
+            }
+
+            .color {
+                margin-top: 10%;
+                margin-bottom: 5%;
+
+                h4 {
+                    color: #333;
+                    font-size:12px ;
+                    margin-bottom: 3%;
+                }
+
+                .blue {
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 8px;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    border: solid 2px rgb(214, 211, 211);
+                    background-color: rgb(87, 96, 224);
+                        &:hover {
+                            background-color: rgb(143, 149, 229);
+                        }
+                }
+                .brown {
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 8px;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    border: solid 2px rgb(214, 211, 211);
+                    background-color: rgb(187, 94, 57);
+                        &:hover {
+                            background-color: rgb(207, 128, 96);
+                        }
+                }
+                .red {
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 8px;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    border: solid 2px rgb(214, 211, 211);
+                    background-color: rgb(233, 70, 70);
+                        &:hover {
+                            background-color: rgb(230, 113, 113);
+                        }
+                }
+            }
+
+            .size {
+                margin-bottom: 10%;
+
+                h4 {
+                    color: #333;
+                    font-size: 12px;
+                }
+                button {
                     color: #999;
-                    text-decoration: line-through ;
-                }
-        }
-
-        p:last-child {
-            font-size: 12px;
-            font-weight: 600;
-        }
-    }
-
-    .color {
-        margin-top: 10%;
-        margin-bottom: 5%;
-
-        h4 {
-            color: #333;
-            font-size:12px ;
-            margin-bottom: 3%;
-        }
-
-        .blue {
-            display: inline-block;
-            position: relative;
-            margin-right: 8px;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: solid 2px rgb(214, 211, 211);
-            background-color: rgb(87, 96, 224);
-                &:hover {
-                    background-color: rgb(143, 149, 229);
-                }
-        }
-        .brown {
-            display: inline-block;
-            position: relative;
-            margin-right: 8px;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: solid 2px rgb(214, 211, 211);
-            background-color: rgb(187, 94, 57);
-                &:hover {
-                    background-color: rgb(207, 128, 96);
-                }
-        }
-        .red {
-            display: inline-block;
-            position: relative;
-            margin-right: 8px;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: solid 2px rgb(214, 211, 211);
-            background-color: rgb(233, 70, 70);
-                &:hover {
-                    background-color: rgb(230, 113, 113);
-                }
-        }
-    }
-
-    .size {
-        margin-bottom: 10%;
-        h4 {
-            color: #333;
-            font-size: 12px;
-        }
-        button {
-            color: #999;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-            outline: inherit;
-            font-size: 12px;
-            margin-right: 10px;
-            margin-right: 8px;
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background-color:rgb(220, 220, 220);
-                &:hover {
-                    background-color: #f68773;
-                    color: white;
-                }
-        }        
-    }
-
-    .custom-qty {
-        color: #999;
-        box-sizing: border-box;
-        position: relative;
-
-        #quantity {
-            width: 90vw;
-            height: 40px;
-            border:2px solid rgb(190, 189, 189);
-            text-align: center;
-            font-size: 15px;
-            font-weight: 700;
-            display: inline-block;
-        }
-        .up-qty {
-            cursor: pointer;
-            box-sizing: border-box;
-            position: absolute;
-            text-align: center;
-            right: 25px;
-            margin-top: -27px;
-        }
-        .down-qty {
-            cursor: pointer;
-            box-sizing: border-box;
-            position: absolute;
-            text-align: center;
-            left: 25px;
-            margin-top: -27px;
-        }
-    }
-
-    .validation {
-        display: flex ;
-        justify-content: space-between;
-        padding-top: 10px;
-        padding-bottom: 5%;
-        
-        button {
-            background-color: #333;
-            color: rgb(214, 211, 211);
-            width: 73vw;
-            height: 40px;
-            border: none;
-            text-transform: uppercase;
-            font-weight: 600;
-
-                &:hover {
-                    background-color: #f68773;
-                }
-                &.now {
-                    width: 90vw;
-                    margin-bottom: 5%;
-                }
-        }
-        
-        .fond-icone {
-
-            width: 36px;
-            height: 36px;
-            border: 2px solid rgb(207, 206, 206);
-            color: #999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-                &:hover {
-                    width: 40px;
-                    height: 40px;
-                    background-color:#f68773;
                     border: none;
-                    color: rgb(220, 220, 220);
+                    padding: 0;
+                    cursor: pointer;
+                    outline: inherit;
+                    font-size: 12px;
+                    margin-right: 10px;
+                    margin-right: 8px;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color:rgb(220, 220, 220);
+                        &:hover {
+                            background-color: #f68773;
+                            color: white;
+                        }
                 }
-        }
-    }
+            }
 
-    .category {
-        height: 140px;
-        margin-top: 4%;
-        margin-bottom: 5%;
-        padding-top:3%;
-        padding-bottom: 3%;
-        border-top: solid 1px rgb(201, 201, 201);
-        border-bottom: solid 1px rgb(201, 201, 201);
-        font-size: 12px;
-        font-weight: 600;
+            .resize-validatio {
+                display: flex;
+                flex-direction: column;
 
-        .littleblackword {
-            color: #333;
-            text-transform: uppercase;
-        }
+                .custom-qty {
+                    color: #999;
 
-        .icone-social {
-            margin-left: 4%;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #333;
-            font-size: 18px;
-                &:hover {
-                    color: #f68773;
+                    #quantity {
+                        width: 90vw;
+                        height: 40px;
+                        border:2px solid rgb(190, 189, 189);
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                    .up-qty {
+                        cursor: pointer;
+                        position: absolute;
+                        text-align: center;
+                        right: 25px;
+                        margin-top: -27px;
+                    }
+                    .down-qty {
+                        cursor: pointer;
+                        position: absolute;
+                        text-align: center;
+                        left: 25px;
+                        margin-top: -27px;
+                    }
                 }
-        }
 
-        .fab {
-            padding-right: 15px;
+                .validation {
+                    padding-top: 10px;
+                    padding-bottom: 5%;
+
+                    
+                    .before {
+                        background-color: #333;
+                        color: rgb(214, 211, 211);
+                        width: 73vw;
+                        height: 40px;
+                        border: none;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                            &:hover {
+                                background-color: #f68773;
+                            }
+                    }
+                }
+
+                .position-love {
+                    display: flex;
+                    justify-content: right;
+                    margin-top: -52px;
+                    margin-bottom: 10px;
+
+                    .icone-love {
+                        width: 36px;
+                        height: 36px;
+                        border: 2px solid rgb(207, 206, 206);
+                        color: #999;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                            &:hover {
+                                width: 40px;
+                                height: 40px;
+                                background-color:#f68773;
+                                border: none;
+                                color: rgb(220, 220, 220);
+                            }
+                    }
+                }
+            }
+
+                .btn-buy {
+
+                    .now {
+                        font-size: 12px;
+                        width: 90vw;
+                        background-color: #333;
+                        color: rgb(214, 211, 211);
+                        height: 35px;
+                        border: none;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        margin-bottom: 0%;
+                            &:hover {
+                                background-color: #f68773;
+                            }
+                    }
+                }
+
+            .category {
+                height: 140px;
+                margin-top: 4%;
+                margin-bottom: 5%;
+                padding-top:3%;
+                padding-bottom: 3%;
+                border-top: solid 1px rgb(201, 201, 201);
+                border-bottom: solid 1px rgb(201, 201, 201);
+                font-size: 12px;
+                font-weight: 600;
+
+                .littleblackword {
+                    color: #333;
+                    text-transform: uppercase;
+                }
+
+                .icone-social {
+                    margin-left: 4%;
+                    margin-top: 20px;
+                }
+
+                a {
+                    color: #333;
+                    font-size: 18px;
+                        &:hover {
+                            color: #f68773;
+                        }
+                }
+
+                .fab {
+                    padding-right: 15px;
+                }
+            }
         }
     }
 
@@ -919,7 +946,7 @@ body {
                         cursor: pointer;
                         position: absolute;
                         text-align: center;
-                        margin-left: 27%;
+                        margin-left:12%;
                         margin-top: -22px;
                         font-size: 12px;
                     }
@@ -927,7 +954,7 @@ body {
                         cursor: pointer;
                         position: absolute;
                         text-align: center;
-                        left: 5%;
+                        left: 52%;
                         margin-top: -22px;
                         font-size: 12px;
                     }
@@ -1002,7 +1029,6 @@ body {
                 padding-top:3%;
                 padding-bottom: 3%;
                 border-top: solid 1px rgb(201, 201, 201);
-                border-bottom: solid 1px rgb(201, 201, 201);
                 font-size: 12px;
                 font-weight: 600;
 
@@ -1034,6 +1060,7 @@ body {
     .infos {
         width: 80vw;
         margin: 0 auto;
+        border-top: solid 1px rgb(201, 201, 201);
 
         .menu-description {
             height: 100px;
