@@ -1,6 +1,4 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .header {
     padding: 0px 50px;
@@ -53,6 +51,8 @@ body {
         font-weight: 550;
         font-size: 20px;
     }
+
+    
 }
 
 
@@ -64,17 +64,88 @@ pour téléphone */
 
 @media screen and (max-width: 450px) {
 
-    h1 {
-        display: none;
+    body {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.5em;
+
+        h1 {
+            display: none;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #222;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #222;
+            margin-bottom: 0px;
+        }
+
+        .fa-star {
+            font-size: 10px;
+            color: #F68773;
+            margin-bottom: 5px;
+        }
+
+        .fa-star-o {
+            font-size: 10px;
+            color: #F68773;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+        .prixbarre {
+            font-size: 18px;
+            text-decoration: line-through;
+        }
+
+        .more {
+            color: #222;
+            text-decoration: underline;
+            font-variant: small-caps;
+            font-weight: 700;
+        }
+
+        .more:active {
+            color: #222;
+            text-decoration: underline;
+            font-variant: small-caps;
+            font-weight: 700;
+        }
+
+        .more:hover {
+            background-color: aqua;
+        }
+
+        .lnauthor {
+            color: #F68773;
+            font-weight: 700;
+        }
+
+        .namore {
+            font-size: 18px;
+        }
+
+
     }
+
+    
 
     #topbox{
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 75vh repeat(3, 200px);
-        min-width: 300px;
+        
 
         #topbox001 {
             display: none;
@@ -123,11 +194,17 @@ pour téléphone */
     #global {
         margin-left: 20px;
         margin-right: 20px;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 35px;
 
         #topsellers {
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: repeat(4, auto);
+            margin-top: 10px;
+            margin-bottom: 50px;
+            box-sizing: border-box;
 
             #ts001 {
                 grid-row-start: 1;
@@ -149,8 +226,12 @@ pour téléphone */
 
         #newarrival {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 47% 47%;
+            grid-column-gap: 6%;
             grid-template-rows: auto;
+            box-sizing: border-box;
+            padding-top: 15px;
+            padding-bottom: 35px;
 
             #na001 {
                 display: none;
@@ -205,11 +286,21 @@ pour téléphone */
                 grid-column: 2 / 2;
                 grid-row:  3 / 4;
             }
+
+            #nadiscover {
+                grid-column: 1 / 3;
+                grid-row: 4 / 5;
+
+                text-align: center;
+            }
         }
     }
 
     #dealoftheday {
-        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 15px;
+        margin-bottom: 35px;
         padding-top: 15%;
         padding-bottom: 15%;
         padding-left : 5%;
@@ -219,6 +310,7 @@ pour téléphone */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 45%;
+        box-sizing: border-box;
         
 
         .timer {
@@ -234,6 +326,9 @@ pour téléphone */
     #global2 {
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        box-sizing: border-box;
 
         #latestnews {
             display: grid;
@@ -270,6 +365,8 @@ pour téléphone */
             grid-template-rows: auto;
             margin-top: 20px;
             margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 20px;
 
             #kctext {
                 grid-row: 1 / 2;
@@ -282,7 +379,10 @@ pour téléphone */
     }
 
     #bottompics {
-        margin: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
         width: calc(100%-40px);
         display: grid;
         grid-template-rows: auto;
@@ -348,11 +448,17 @@ pour téléphone */
     }
 
     .topsection {
-        
+        h3 {
+            font-size: 18px;
+        }
     
     }
 
     .tssection {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+
         .tspic1 {
             display: block;
             width: 70%;
@@ -365,24 +471,46 @@ pour téléphone */
             height: auto; 
         }
 
+        h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
         
     }
 
     .nasection {
+        padding-top: 10px;
+        padding-bottom: 20px;
+
         .napic {
             display: block;
-            width: 80%;
+            width: 100%;
             height: auto;
         }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        
     }
 
     
 
+    
+
     .lnsection {
+        padding-top: 10px;
+        padding-bottom: 20px;
         .lnpic {
             display: block;
             width: 100%;
             height: auto;
+        }
+
+        .more {
+            font-size: 18px;
         }
     }
 
@@ -465,6 +593,8 @@ pour téléphone */
     #global {
         margin-left: 20px;
         margin-right: 20px;
+        height: auto;
+        box-sizing: border-box;
 
         #topsellers {
             display: grid;
@@ -571,6 +701,8 @@ pour téléphone */
     #global2 {
         margin-left: 20px;
         margin-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 35px;
 
         #latestnews {
             display: grid;
@@ -610,6 +742,7 @@ pour téléphone */
             grid-template-columns: 50% 50%;
             margin-top: 20px;
             margin-bottom: 20px;
+            
 
             #kctext {
                 grid-column: 1 / 2;
@@ -622,7 +755,7 @@ pour téléphone */
     }
 
     #bottompics {
-        margin-top: 20px;
+        margin-top: 60px;
         margin-bottom: 20px;
         width: 100%;
         display: grid;
@@ -691,7 +824,6 @@ pour téléphone */
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
-        overflow: visible;
 
         .tspic2 {
             display: inline-block;

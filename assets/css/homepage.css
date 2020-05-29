@@ -1,7 +1,5 @@
 @charset "UTF-8";
-body {
-  font-family: 'Roboto', sans-serif; }
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .header {
   padding: 0px 50px;
   border-bottom: 1px solid #ececec; }
@@ -45,15 +43,57 @@ body {
 
 pour téléphone */
 @media screen and (max-width: 450px) {
-  h1 {
-    display: none; }
+  body {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5em; }
+    body h1 {
+      display: none; }
+    body h2 {
+      font-size: 30px;
+      color: #222;
+      font-weight: 700; }
+    body h3 {
+      color: #222;
+      margin-bottom: 0px; }
+    body .fa-star {
+      font-size: 10px;
+      color: #F68773;
+      margin-bottom: 5px; }
+    body .fa-star-o {
+      font-size: 10px;
+      color: #F68773;
+      margin-bottom: 5px; }
+    body .price {
+      font-size: 18px; }
+    body .prixbarre {
+      font-size: 18px;
+      text-decoration: line-through; }
+    body .more {
+      color: #222;
+      text-decoration: underline;
+      font-variant: small-caps;
+      font-weight: 700; }
+    body .more:active {
+      color: #222;
+      text-decoration: underline;
+      font-variant: small-caps;
+      font-weight: 700; }
+    body .more:hover {
+      background-color: aqua; }
+    body .lnauthor {
+      color: #F68773;
+      font-weight: 700; }
+    body .namore {
+      font-size: 18px; }
   #topbox {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 75vh repeat(3, 200px);
-    min-width: 300px; }
+    grid-template-rows: 75vh repeat(3, 200px); }
     #topbox #topbox001 {
       display: none;
       background-image: url(../pictures/homepage/abc.jpg);
@@ -87,11 +127,17 @@ pour téléphone */
       background-position: top left; }
   #global {
     margin-left: 20px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 35px; }
     #global #topsellers {
       display: grid;
       grid-template-columns: auto;
-      grid-template-rows: repeat(4, auto); }
+      grid-template-rows: repeat(4, auto);
+      margin-top: 10px;
+      margin-bottom: 50px;
+      box-sizing: border-box; }
       #global #topsellers #ts001 {
         grid-row-start: 1;
         grid-row-end: 2; }
@@ -103,8 +149,12 @@ pour téléphone */
         grid-row: 4 / 5; }
     #global #newarrival {
       display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: auto; }
+      grid-template-columns: 47% 47%;
+      grid-column-gap: 6%;
+      grid-template-rows: auto;
+      box-sizing: border-box;
+      padding-top: 15px;
+      padding-bottom: 35px; }
       #global #newarrival #na001 {
         display: none; }
       #global #newarrival #na002 {
@@ -135,8 +185,15 @@ pour téléphone */
       #global #newarrival #na012 {
         grid-column: 2 / 2;
         grid-row: 3 / 4; }
+      #global #newarrival #nadiscover {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        text-align: center; }
   #dealoftheday {
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 35px;
     padding-top: 15%;
     padding-bottom: 15%;
     padding-left: 5%;
@@ -145,7 +202,8 @@ pour téléphone */
     background-image: url(../pictures/homepage/deals_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 45%; }
+    background-position: 45%;
+    box-sizing: border-box; }
     #dealoftheday .timer {
       display: block;
       width: 100%;
@@ -155,7 +213,10 @@ pour téléphone */
       background-color: white; }
   #global2 {
     margin-left: 20px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    box-sizing: border-box; }
     #global2 #latestnews {
       display: grid;
       grid-template-rows: auto;
@@ -176,13 +237,18 @@ pour téléphone */
       display: grid;
       grid-template-rows: auto;
       margin-top: 20px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 20px; }
       #global2 #keepconnected #kctext {
         grid-row: 1 / 2; }
       #global2 #keepconnected #kcemail {
         grid-row: 2 / 3; }
   #bottompics {
-    margin: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     width: calc(100%-40px);
     display: grid;
     grid-template-rows: auto;
@@ -216,22 +282,41 @@ pour téléphone */
       display: none; }
     #bottompics #bp014 {
       display: none; }
-  .tssection .tspic1 {
-    display: block;
-    width: 70%;
-    height: auto; }
-  .tssection .tspic2 {
-    display: block;
-    width: 100%;
-    height: auto; }
-  .nasection .napic {
-    display: block;
-    width: 80%;
-    height: auto; }
-  .lnsection .lnpic {
-    display: block;
-    width: 100%;
-    height: auto; }
+  .topsection h3 {
+    font-size: 18px; }
+  .tssection {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box; }
+    .tssection .tspic1 {
+      display: block;
+      width: 70%;
+      height: auto; }
+    .tssection .tspic2 {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .tssection h3 {
+      font-size: 24px;
+      margin-bottom: 5px; }
+  .nasection {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .nasection .napic {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .nasection h3 {
+      font-size: 18px; }
+  .lnsection {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .lnsection .lnpic {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .lnsection .more {
+      font-size: 18px; }
   .kcsection {
     border: 1px solid black; }
   .picturerow .prpic {
@@ -280,7 +365,9 @@ pour téléphone */
       background-position: top left; }
   #global {
     margin-left: 20px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    height: auto;
+    box-sizing: border-box; }
     #global #topsellers {
       display: grid;
       grid-template-columns: auto;
@@ -344,7 +431,9 @@ pour téléphone */
       background-color: white; }
   #global2 {
     margin-left: 20px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 35px; }
     #global2 #latestnews {
       display: grid;
       grid-template-rows: auto;
@@ -374,7 +463,7 @@ pour téléphone */
       #global2 #keepconnected #kcemail {
         grid-column: 2 / 3; }
   #bottompics {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 20px;
     width: 100%;
     display: grid;
@@ -411,8 +500,7 @@ pour téléphone */
   .tssection {
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    overflow: visible; }
+    width: 100%; }
     .tssection .tspic2 {
       display: inline-block;
       width: 80%;
