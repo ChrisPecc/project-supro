@@ -81,7 +81,7 @@ pour téléphone */
       font-variant: small-caps;
       font-weight: 700; }
     body .more:hover {
-      background-color: aqua; }
+      background-color: #e4e4e4; }
     body .lnauthor {
       color: #F68773;
       font-weight: 700; }
@@ -90,10 +90,18 @@ pour téléphone */
   #topbox {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 75vh repeat(3, 200px); }
+    grid-template-rows: 75vh auto; }
+    #topbox #topboxicons {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      z-index: 77; }
+    #topbox #dots {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      z-index: 77; }
     #topbox #topbox001 {
       display: none;
       background-image: url(../pictures/homepage/abc.jpg);
@@ -130,13 +138,13 @@ pour téléphone */
     margin-right: 20px;
     box-sizing: border-box;
     margin-top: 15px;
-    margin-bottom: 35px; }
+    margin-bottom: 80px; }
     #global #topsellers {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(4, auto);
-      margin-top: 10px;
-      margin-bottom: 50px;
+      margin-top: 20px;
+      margin-bottom: 80px;
       box-sizing: border-box; }
       #global #topsellers #ts001 {
         grid-row-start: 1;
@@ -147,6 +155,16 @@ pour téléphone */
         grid-row: 3 / 4; }
       #global #topsellers #ts004 {
         grid-row: 4 / 5; }
+    #global #newarrivalmenus {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto; }
+      #global #newarrivalmenus #namenu1 {
+        grid-row: 1 / 2; }
+      #global #newarrivalmenus #namenu2 {
+        grid-row: 2 / 3; }
+      #global #newarrivalmenus #namenu3 {
+        display: none; }
     #global #newarrival {
       display: grid;
       grid-template-columns: 47% 47%;
@@ -204,6 +222,28 @@ pour téléphone */
     background-repeat: no-repeat;
     background-position: 45%;
     box-sizing: border-box; }
+    #dealoftheday h3 {
+      font-size: 24px; }
+    #dealoftheday .dotdprice {
+      font-size: 15px; }
+      #dealoftheday .dotdprice .dprixbarre {
+        text-decoration: line-through; }
+      #dealoftheday .dotdprice .dprice {
+        font-weight: 700;
+        color: #222;
+        padding-left: 5px; }
+    #dealoftheday .reduction {
+      color: white;
+      background-color: #F68773;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+    #dealoftheday .stock {
+      display: none; }
     #dealoftheday .timer {
       display: block;
       width: 100%;
@@ -214,7 +254,7 @@ pour téléphone */
   #global2 {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 80px;
     margin-bottom: 35px;
     box-sizing: border-box; }
     #global2 #latestnews {
@@ -282,11 +322,67 @@ pour téléphone */
       display: none; }
     #bottompics #bp014 {
       display: none; }
-  .topsection h3 {
-    font-size: 18px; }
+  .topsection {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 10%;
+    padding-right: 10%; }
+    .topsection h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 1.25em; }
+    .topsection .more {
+      font-size: 16px; }
+  .tpbicons {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 25px; }
+    .tpbicons .fab {
+      color: #999;
+      padding: 10px; }
+  .tpdots {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    align-items: flex-end; }
+    .tpdots .tpbidots {
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #999; }
+    .tpdots .filled {
+      background-color: #222; }
+  .tps2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px; }
+    .tps2 h3 {
+      font-size: 48px;
+      margin-top: 0.7em;
+      margin-bottom: 0.7em; }
+    .tps2 .more {
+      font-size: 18px; }
+  .tps4 {
+    text-align: center;
+    color: white; }
+    .tps4 h3 {
+      color: white; }
+    .tps4 .more {
+      color: white; }
+  .tps5 {
+    text-align: right; }
   .tssection {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     box-sizing: border-box; }
     .tssection .tspic1 {
       display: block;
@@ -300,17 +396,16 @@ pour téléphone */
       font-size: 24px;
       margin-bottom: 5px; }
   .nasection {
-    padding-top: 10px;
-    padding-bottom: 20px; }
+    margin-bottom: 10px; }
     .nasection .napic {
       display: block;
       width: 100%;
       height: auto; }
     .nasection h3 {
-      font-size: 18px; }
+      font-size: 15px; }
   .lnsection {
-    padding-top: 10px;
-    padding-bottom: 20px; }
+    padding-top: 20px;
+    padding-bottom: 50px; }
     .lnsection .lnpic {
       display: block;
       width: 100%;
@@ -322,17 +417,65 @@ pour téléphone */
   .picturerow .prpic {
     display: block;
     width: 100%;
-    height: auto;
+    height: calc((100vw - 40px) / 3);
     object-fit: cover; } }
 
 /* pour tablettes */
 @media screen and (min-width: 451px) and (max-width: 770px) {
-  h1 {
-    display: none; }
+  body {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5em; }
+    body h1 {
+      display: none; }
+    body h2 {
+      font-size: 30px;
+      color: #222;
+      font-weight: 700; }
+    body h3 {
+      color: #222;
+      margin-bottom: 0px; }
+    body .fa-star {
+      font-size: 10px;
+      color: #F68773;
+      margin-bottom: 5px; }
+    body .fa-star-o {
+      font-size: 10px;
+      color: #F68773;
+      margin-bottom: 5px; }
+    body .price {
+      font-size: 18px; }
+    body .prixbarre {
+      font-size: 18px;
+      text-decoration: line-through; }
+    body .more {
+      color: #222;
+      text-decoration: underline;
+      font-variant: small-caps;
+      font-weight: 700; }
+    body .more:active {
+      color: #222;
+      text-decoration: underline;
+      font-variant: small-caps;
+      font-weight: 700; }
+    body .more:hover {
+      background-color: #e4e4e4; }
+    body .lnauthor {
+      color: #F68773;
+      font-weight: 700; }
+    body .namore {
+      font-size: 18px; }
   #topbox {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 100vh repeat(3, 300px); }
+    #topbox #topboxicons {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      z-index: 77; }
+    #topbox #dots {
+      display: none; }
     #topbox #topbox001 {
       display: none;
       background-image: url(../pictures/homepage/abc.jpg);
@@ -424,6 +567,28 @@ pour téléphone */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60%; }
+    #dealoftheday h3 {
+      font-size: 24px; }
+    #dealoftheday .dotdprice {
+      font-size: 15px; }
+      #dealoftheday .dotdprice .dprixbarre {
+        text-decoration: line-through; }
+      #dealoftheday .dotdprice .dprice {
+        font-weight: 700;
+        color: #222;
+        padding-left: 5px; }
+    #dealoftheday .reduction {
+      color: white;
+      background-color: #F68773;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+    #dealoftheday .stock {
+      display: none; }
     #dealoftheday .timer {
       display: block;
       width: 60%;
@@ -523,7 +688,7 @@ pour téléphone */
   .picturerow .prpic {
     display: block;
     width: 100%;
-    height: auto;
+    height: calc(100vw / 5);
     object-fit: cover; } }
 
 /* pour bureau */
