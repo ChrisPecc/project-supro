@@ -14,7 +14,7 @@
 
     <body>
         <header>
-           <!-- <div class="header"> 
+           <!--<div class="header"> 
                 <div class="row">
                     <div class="col-md-2 text-left">
                         <div class="logo">
@@ -51,6 +51,7 @@
                     <div class="col-md-2">
                         <div class="icon">
                             <ul class="d-flex list-unstyled">
+
                                 <li>
                                     <i class="far fa-user"></i>
                                 </li>
@@ -67,7 +68,8 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>-->
+
         </header>
         <main> 
 
@@ -77,7 +79,7 @@
                 <p>Products</p>
             </nav>
 
-            <article>
+            <article class="photo-description">
                 <section class="imageproduit">
 
                         <div class="défilement" >
@@ -96,7 +98,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section class="infos-image" >
                     <div class="description-produit">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -110,7 +112,7 @@
                         <p class="référence">SKU: AB1609456789</p>
                         <p class="price">95,90€ <span class="oldprice">119,90€</span> </p>
                         <p>Un sac de fou malade où tu peux mettre ce que tu veux tant qu'il n'est pas rempli !
-                        Il n'en existe que 50000000 donc tu auras un style unique au monde.</p>
+                        </p>
                     </div>
 
                     <div class="color">
@@ -127,18 +129,18 @@
                         <button >L</button>
                     </div>
 
-                    
-                    <div class="custom-qty" >
-                        <input type="text" value="1" name="quantity" id="quantity">
-                        <div class="btn-plus"></div>
-                            <span class="up-qty" >
-                                <i class="fas fa-plus"></i>
-                            </span>
-                            <span class="down-qty" >
-                                <i class="fas fa-minus"></i>
-                            </span>
+                    <div class="resize-validation">
+                        <div class="custom-qty" >
+                            <input type="text" value="1" name="quantity" id="quantity">
+                            <div class="btn-plus"></div>
+                                <span class="up-qty" >
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                                <span class="down-qty" >
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
 
                         <div class="validation">
                             <button>Add to cart</button>
@@ -146,25 +148,27 @@
                             <i class="far fa-heart"></i>
                             </span>
                         </div>
-
-                        <div class="validation">
-                            <button class="now">Buy now</button>
-                        </div>
+                    </div>
+                    <div class="validation">
+                        <button class="now">Buy now</button>
+                    </div>
                     
-                </section>
-                <section class="category">
-                    <p>
-                        <span class="blackword">Category:</span> Bags, Fashion
-                    </p>
+                    <div class="category">
+                        <p>
+                            <span class="littleblackword">Category:</span> Bags, Fashion
+                        </p>
 
-                    <p> <span class="blackword" >Tags:</span> clothing, Fashion
-                        <div class="icone-social" >
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-pinterest"></i></a>
-                        </div>
-                    </p>
+                        <p> <span class="littleblackword" >Tags:</span> clothing, Fashion
+                            <div class="icone-social" >
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </p>
+                    </div>
                 </section>
+            </article>
+            
             
                 <section class="infos">
                     <ul class="menu-description">
@@ -249,29 +253,36 @@
                 </section>
 
                 <footer class="fin-de-page">
-                    <p class="blackword">Help & Information</p>
-                    <ul >
-                        <li>Track Order</li>
-                        <li>Delivery & returns</li>
-                        <li>Premir Delivery</li>
-                        <li>FAQ</li>
-                    </ul>
 
-                    <p class="blackword">About Supro</p>
-                    <ul >
-                        <li>About us</li>
-                        <li>Careers</li>
-                        <li>Coprporate</li>
-                        <li>Investors</li>
-                    </ul>
+                    <div class="infos" >
+                        <p class="blackword">Help & Information</p>
+                        <ul >
+                            <li>Track Order</li>
+                            <li>Delivery & returns</li>
+                            <li>Premir Delivery</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
 
-                    <p class="blackword">Online Shop</p>
-                    <ul >
-                        <li>Shoes</li>
-                        <li>Bags</li>
-                        <li>Wallets</li>
-                        <li>Belts</li>
-                    </ul>
+                    <div class="infos" >
+                        <p class="blackword">About Supro</p>
+                        <ul >
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Coprporate</li>
+                            <li>Investors</li>
+                        </ul>
+                    </div>
+
+                    <div class="infos" >
+                        <p class="blackword">Online Shop</p>
+                        <ul >
+                            <li>Shoes</li>
+                            <li>Bags</li>
+                            <li>Wallets</li>
+                            <li>Belts</li>
+                        </ul>
+                    </div>
 
                     <p class="blackword">Language</p>
                     <div class="dropup">
