@@ -1765,4 +1765,195 @@ pour téléphone */
             object-fit: cover;
         }
     }
+
+
+    /* footer bureau */
+
+    footer {
+
+        font-size: 12px;
+        color: #999;
+
+        a {
+            text-decoration: none;
+            color: #999;
+            &:active {
+                text-decoration: none;
+                color: #999;
+            }
+        }
+
+        /* positionnement dans le grid */
+
+        #footer1 {
+            margin-left: 17.5%;
+            margin-right: 17.5%;
+            display: grid;
+            grid-template-columns: 40% 18% 18% 18%;
+            column-gap: 2%;
+            grid-template-rows: auto;
+
+            margin-bottom: 20px;
+            
+            #ftcontact {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            #helpinfo {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            #about {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
+
+            #onlineshop {
+                grid-column: 4 / 5;
+                grid-row: 1 / 2;
+            }
+
+            #languages {
+                display: none;
+            }
+
+            #currency {
+                display: none;
+            }
+
+            /* mise en forme du texte */
+
+            .ftcontactstyle {
+                font-size: 15px;
+                line-height: 3em;
+
+                .ftcontactpic {
+                    padding-bottom: 0.75em;
+                }
+
+                .fa-map-marker-alt {
+                    padding-top: 1em;
+                    vertical-align: top;
+                }
+
+                .fa-envelope {
+                    vertical-align: middle;
+                }
+
+                .fa-phone-alt {
+                    vertical-align: middle;
+                }
+
+                .ftaddress {
+                    display: inline-block;
+                    line-height: 1em;
+                }
+
+                .fas {
+                    font-size: 25px;
+                    padding: 2px;
+                    padding-right: 10px;
+                }
+
+                .far {
+                    font-size: 25px;
+                    padding: 2px;
+                    padding-right: 10px;
+                }
+            }
+            
+            .listssection {
+
+                color: #999;
+
+                .fttitle {
+                    padding-bottom: 1em;
+                    text-transform: uppercase;
+                    color: #222;
+                    font-size: 12px;
+                }
+                
+                .liform {
+                    list-style-type: none;
+                    padding-left: 0px;
+                    line-height: 2em;
+                }
+                
+                select {
+                    margin-top: 1em;
+                    margin-bottom: 3em;
+                }
+            }
+        }
+
+        hr {
+            display: none;
+            background-color: #999;
+        }
+
+        #footer2 {
+            margin-left: 17.5%;
+            margin-right: 17.5%;
+            display: grid;
+            grid-template-columns: repeat(3, calc(100%/3));
+            grid-template-rows: auto;
+            margin-bottom: 50px;
+
+            #copyright {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                color: #999;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+
+                strong {
+                    color: #222;
+                }
+            }
+
+            #pritou {
+                display: none;
+
+                font-size: 16px;
+                padding-top: 15px;
+
+                .pritouspa {
+                    padding-left: 15px;
+                }
+            }
+
+            #ftsoc {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .fab {
+                    padding: 3px;
+                }
+            }
+
+            #payment {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+
+                .paymentpic {
+                    padding: 2px;
+                }
+            }
+        }
+
+    }
 }

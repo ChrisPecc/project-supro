@@ -1062,4 +1062,122 @@ pour téléphone */
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover; } }
+    object-fit: cover; }
+  /* footer bureau */
+  footer {
+    font-size: 12px;
+    color: #999;
+    /* positionnement dans le grid */ }
+    footer a {
+      text-decoration: none;
+      color: #999; }
+      footer a:active {
+        text-decoration: none;
+        color: #999; }
+    footer #footer1 {
+      margin-left: 17.5%;
+      margin-right: 17.5%;
+      display: grid;
+      grid-template-columns: 40% 18% 18% 18%;
+      column-gap: 2%;
+      grid-template-rows: auto;
+      margin-bottom: 20px;
+      /* mise en forme du texte */ }
+      footer #footer1 #ftcontact {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      footer #footer1 #helpinfo {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      footer #footer1 #about {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; }
+      footer #footer1 #onlineshop {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2; }
+      footer #footer1 #languages {
+        display: none; }
+      footer #footer1 #currency {
+        display: none; }
+      footer #footer1 .ftcontactstyle {
+        font-size: 15px;
+        line-height: 3em; }
+        footer #footer1 .ftcontactstyle .ftcontactpic {
+          padding-bottom: 0.75em; }
+        footer #footer1 .ftcontactstyle .fa-map-marker-alt {
+          padding-top: 1em;
+          vertical-align: top; }
+        footer #footer1 .ftcontactstyle .fa-envelope {
+          vertical-align: middle; }
+        footer #footer1 .ftcontactstyle .fa-phone-alt {
+          vertical-align: middle; }
+        footer #footer1 .ftcontactstyle .ftaddress {
+          display: inline-block;
+          line-height: 1em; }
+        footer #footer1 .ftcontactstyle .fas {
+          font-size: 25px;
+          padding: 2px;
+          padding-right: 10px; }
+        footer #footer1 .ftcontactstyle .far {
+          font-size: 25px;
+          padding: 2px;
+          padding-right: 10px; }
+      footer #footer1 .listssection {
+        color: #999; }
+        footer #footer1 .listssection .fttitle {
+          padding-bottom: 1em;
+          text-transform: uppercase;
+          color: #222;
+          font-size: 12px; }
+        footer #footer1 .listssection .liform {
+          list-style-type: none;
+          padding-left: 0px;
+          line-height: 2em; }
+        footer #footer1 .listssection select {
+          margin-top: 1em;
+          margin-bottom: 3em; }
+    footer hr {
+      display: none;
+      background-color: #999; }
+    footer #footer2 {
+      margin-left: 17.5%;
+      margin-right: 17.5%;
+      display: grid;
+      grid-template-columns: repeat(3, calc(100%/3));
+      grid-template-rows: auto;
+      margin-bottom: 50px; }
+      footer #footer2 #copyright {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        color: #999;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center; }
+        footer #footer2 #copyright strong {
+          color: #222; }
+      footer #footer2 #pritou {
+        display: none;
+        font-size: 16px;
+        padding-top: 15px; }
+        footer #footer2 #pritou .pritouspa {
+          padding-left: 15px; }
+      footer #footer2 #ftsoc {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        footer #footer2 #ftsoc .fab {
+          padding: 3px; }
+      footer #footer2 #payment {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center; }
+        footer #footer2 #payment .paymentpic {
+          padding: 2px; } }
