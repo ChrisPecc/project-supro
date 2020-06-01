@@ -322,6 +322,8 @@ pour téléphone */
                 grid-row: 4 / 5;
 
                 text-align: center;
+
+                padding-top: 50px;
             }
         }
     }
@@ -608,6 +610,7 @@ pour téléphone */
         padding-top: 20px;
         padding-bottom: 50px;
         box-sizing: border-box;
+        line-height: 3em;
 
         .tspic1 {
             display: block;
@@ -629,8 +632,33 @@ pour téléphone */
         
     }
 
+    .nadlist {
+        list-style-type: none;
+        padding-left: 0px;
+
+        li {
+            padding-right: 25px;
+            display: inline;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            &:active {
+                color: #999;
+                text-decoration: none;
+            }
+        }
+
+        .namenu2selected {
+            color: #222;
+            font-weight: 700;
+        }
+    }
+
     .nasection {
         margin-bottom: 10px;
+        line-height: 2em;
 
         .napic {
             display: block;
@@ -648,6 +676,7 @@ pour téléphone */
     .lnsection {
         padding-top: 20px;
         padding-bottom: 50px;
+        
         .lnpic {
             display: block;
             width: 100%;
@@ -656,11 +685,46 @@ pour téléphone */
 
         .more {
             font-size: 18px;
+            line-height: 2em;
         }
+
+        
     }
 
     .kcsection {
-        border: 1px solid black;
+        padding-top: 25px;
+
+    }
+
+    .kcsection2 {
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+
+        form {
+            display: inline-block;
+            width: 100%;
+            
+            
+
+            input[type=text] {             
+                border: none;
+                width: 100%;
+                &:focus {
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                }
+            }
+        }
+   
+        
+
+        button {
+            display: inline-block;
+            justify-self: right;
+            align-self: flex-end;
+            margin-left: 5px;
+        }
     }
 
     .picturerow {
