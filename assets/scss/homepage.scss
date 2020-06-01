@@ -138,7 +138,7 @@ pour téléphone */
 
     
 
-    #topbox{
+    #topbox {
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 80px;
@@ -153,6 +153,7 @@ pour téléphone */
         }
 
         #dots {
+            display: none;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             z-index: 77;
@@ -656,6 +657,8 @@ pour téléphone */
         }
     }
 
+    
+
     .nasection {
         margin-bottom: 10px;
         line-height: 2em;
@@ -724,6 +727,15 @@ pour téléphone */
             justify-self: right;
             align-self: flex-end;
             margin-left: 5px;
+            border: none;
+            background-color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .kcmailaddress {
+            color: #999;
+            background-color: #999;
         }
     }
 
@@ -938,7 +950,9 @@ pour téléphone */
     #topbox{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 100vh repeat(3, 300px);
+        grid-template-rows: 100vh auto;
+
+        margin-bottom: 100px;
         
         #topboxicons {
             grid-column: 1 / 2;
@@ -1019,10 +1033,32 @@ pour téléphone */
             }
         }
 
+        #newarrivalmenus {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+
+            #namenu1 {
+                grid-row: 1 / 2;
+            }
+
+            #namenu2 {
+                grid-row: 2 / 3;
+            }
+
+            #namenu3 {
+                display: none;
+            }
+        }
+
         #newarrival {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 47% 47%;
+            column-gap: 6%;
             grid-template-rows: auto;
+
+            margin-top: 20px;
+            margin-bottom: 80px;
 
             #na001 {
                 display: none;
@@ -1075,6 +1111,17 @@ pour téléphone */
             #na012 {
                 display: none;
             }
+
+            #nadiscover {
+                grid-column: 1 / 3;
+                grid-row: 3 / 4;
+
+                text-align: center;
+
+                padding-top: 50px;
+            }
+
+
         }
     }
 
@@ -1090,13 +1137,15 @@ pour téléphone */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 60%;
+
+        font-size: 18px;
         
         h3 {
-            font-size: 24px;
+            font-size: 30px;
         }
         
         .dotdprice {
-            font-size: 15px;
+            font-size: 18px;
 
             .dprixbarre {
                 text-decoration: line-through;
@@ -1146,7 +1195,12 @@ pour téléphone */
         #latestnews {
             display: grid;
             grid-template-rows: auto;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 47% 47%;
+            column-gap: 6%;
+            row-gap: 30px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+
 
             #ln001 {
                 display: none;
@@ -1178,7 +1232,8 @@ pour téléphone */
 
         #keepconnected {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 47% 47%;
+            column-gap: 6%;
             margin-top: 20px;
             margin-bottom: 20px;
             
@@ -1259,10 +1314,88 @@ pour téléphone */
         }
     }
 
+    .topsection {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            line-height: 1.25em;
+        }
+
+        .more {
+            font-size: 16px;
+        }
+    
+    }
+
+    .tpbicons {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 25px;
+        
+        .fab {
+            color: #999;
+            padding: 10px;
+        }
+        
+    }
+
+    .tps2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        // padding-top: 45%;
+        // padding-bottom: 45%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 30px;
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 60px;
+            line-height: 3em;
+        }
+
+        .more {
+            font-size: 30px;
+        }
+    }
+
+    .tps4 {
+        text-align: center;
+        color: white;
+
+        h3 {
+            color: white;
+        }
+
+        .more {
+            color: white;
+        }
+    }
+
+    .tps5 {
+        text-align: right;
+    }
+
     .tssection {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+        line-height: 3em;
 
         .tspic2 {
             display: inline-block;
@@ -1279,28 +1412,127 @@ pour téléphone */
             
         }
 
+        h3 {
+            font-size: 30px;
+            margin-bottom: 5px;
+            line-height: 1.25em;
+        }
+
+        .more {
+            font-size: 18px;
+        }
         
+    }
+
+    .nadlist {
+        list-style-type: none;
+        padding-left: 0px;
+
+        li {
+            padding-right: 25px;
+            display: inline;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            &:active {
+                color: #999;
+                text-decoration: none;
+            }
+        }
+
+        .namenu2selected {
+            color: #222;
+            font-weight: 700;
+        }
     }
 
     .nasection {
         .napic {
-            display: block;
-            width: 80%;
-            height: auto;
-        }
-    }
-
-    .lnsection {
-        
-        .lnpic {
             display: block;
             width: 100%;
             height: auto;
         }
     }
 
+    .lnsection {
+        padding-bottom: 40px;
+        font-size: 16px;
+        
+        .lnpic {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .more {
+            font-size: 18px;
+            line-height: 2em;
+        }
+    }
+
     .kcsection {
-        border: 1px solid black;
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    
+
+    .mailcontainer {
+        display: flex;
+
+        .mailbottom {
+            align-self: flex-end;
+            justify-self: flex-end;
+
+
+            .kcsection2 {
+                display: flex;
+                flex-direction: row;
+                align-content: stretch;
+                vertical-align: bottom;
+        
+                form {
+                    display: inline-block;
+                    width: 100%;
+                    align-self: flex-end;
+                    
+                    
+        
+                    input[type=text] {             
+                        border: none;
+                        width: 100%;
+                        
+                        &:focus {
+                            border: 1px solid #999;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+           
+            
+        
+                button {
+                    display: inline-block;
+                    justify-self: right;
+                    align-self: flex-end;
+                    margin-left: 5px;
+                    border: none;
+                    background-color: white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+    
+                }
+            }
+    
+            .kcmailaddress {
+                color: #999;
+                background-color: #999;
+                vertical-align: baseline;
+            }
+        }
     }
 
     .picturerow {
@@ -1588,6 +1820,7 @@ pour téléphone */
             #na012 {
                 display: none;
             }
+
         }
     }
 
