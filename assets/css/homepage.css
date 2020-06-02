@@ -81,7 +81,7 @@ pour téléphone */
       font-variant: small-caps;
       font-weight: 700; }
     body .more:hover {
-      background-color: #e4e4e4; }
+      text-decoration: underline; }
     body .lnauthor {
       color: #F68773;
       font-weight: 700; }
@@ -324,6 +324,8 @@ pour téléphone */
       display: none; }
     #bottompics #bp014 {
       display: none; }
+    #bottompics #followus {
+      display: none; }
   .topsection {
     padding-top: 20%;
     padding-bottom: 20%;
@@ -438,6 +440,8 @@ pour téléphone */
     display: flex;
     flex-direction: row;
     align-content: stretch; }
+    .kcsection2 .fa-envelope {
+      display: none; }
     .kcsection2 form {
       display: inline-block;
       width: 100%; }
@@ -570,7 +574,7 @@ pour téléphone */
       font-variant: small-caps;
       font-weight: 700; }
     body .more:hover {
-      background-color: #e4e4e4; }
+      text-decoration: underline; }
     body .lnauthor {
       color: #F68773;
       font-weight: 700; }
@@ -797,6 +801,8 @@ pour téléphone */
       display: none; }
     #bottompics #bp014 {
       display: none; }
+    #bottompics #followus {
+      display: none; }
   .topsection {
     padding-top: 15%;
     padding-bottom: 15%;
@@ -905,6 +911,10 @@ pour téléphone */
         flex-direction: row;
         align-content: stretch;
         vertical-align: bottom; }
+        .mailcontainer .mailbottom .kcsection2 .fa-envelope {
+          align-self: center;
+          font-size: 20px;
+          padding-right: 5px; }
         .mailcontainer .mailbottom .kcsection2 form {
           display: inline-block;
           width: 100%;
@@ -1007,15 +1017,64 @@ pour téléphone */
 
 /* pour bureau */
 @media screen and (min-width: 770px) {
-  h1 {
-    display: none; }
+  body {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5em; }
+    body h1 {
+      display: none; }
+    body h2 {
+      font-size: 30px;
+      color: #222;
+      font-weight: 700; }
+    body h3 {
+      color: #222;
+      margin-bottom: 0px; }
+    body .fa-star {
+      font-size: 10px;
+      color: #F68773;
+      margin-bottom: 5px; }
+    body .fa-star-o {
+      font-size: 10px;
+      color: #F68773;
+      margin-bottom: 5px; }
+    body .price {
+      font-size: 18px; }
+    body .prixbarre {
+      font-size: 18px;
+      text-decoration: line-through; }
+    body .more {
+      color: #222;
+      text-decoration: underline;
+      font-variant: small-caps;
+      font-weight: 700; }
+    body .more:active {
+      color: #222;
+      text-decoration: underline;
+      font-variant: small-caps;
+      font-weight: 700; }
+    body .more:hover {
+      text-decoration: underline; }
+    body .lnauthor {
+      color: #F68773;
+      font-weight: 700; }
+    body .namore {
+      font-size: 18px; }
   #topbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 75vh 25vh; }
-    #topbox #sneakerpic {
+    grid-template-rows: 75vh 25vh;
+    margin-bottom: 80px; }
+    #topbox #topboxicons {
+      grid-column: 1 / 2;
       grid-row: 1 / 2;
-      grid-column: 1 / 4; }
+      z-index: 77; }
+    #topbox #dots {
+      display: none;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      z-index: 77; }
     #topbox #topbox001 {
       grid-row: 1 / 2;
       grid-column: 1 / 4;
@@ -1049,11 +1108,15 @@ pour téléphone */
   #global {
     width: 65%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 80px; }
     #global #topsellers {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto; }
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: auto;
+      column-gap: 5%;
+      row-gap: 40px;
+      margin-bottom: 80px; }
       #global #topsellers #ts001 {
         grid-column: 1 / 2;
         grid-row: 1 / 2; }
@@ -1066,10 +1129,26 @@ pour téléphone */
       #global #topsellers #ts004 {
         grid-column: 3 / 4;
         grid-row: 2 / 3; }
+    #global #newarrivalmenus {
+      display: grid;
+      grid-template-columns: 47% 47%;
+      grid-template-rows: auto; }
+      #global #newarrivalmenus #namenu1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      #global #newarrivalmenus #namenu2 {
+        display: none;
+        grid-row: 2 / 3; }
+      #global #newarrivalmenus #namenu3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
     #global #newarrival {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto; }
+      grid-template-columns: 30% 30% 30%;
+      column-gap: 5%;
+      row-gap: 40px;
+      grid-template-rows: auto;
+      margin-top: 20px; }
       #global #newarrival #na001 {
         grid-column: 1 / 2;
         grid-row: 1 / 2; }
@@ -1100,6 +1179,11 @@ pour téléphone */
         display: none; }
       #global #newarrival #na012 {
         display: none; }
+      #global #newarrival #nadiscover {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        text-align: center;
+        padding-top: 15px; }
   #dealoftheday {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1111,7 +1195,39 @@ pour téléphone */
     background-image: url(../pictures/homepage/deals_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 60%; }
+    background-position: 60%;
+    font-size: 20px;
+    line-height: 2em; }
+    #dealoftheday h3 {
+      font-size: 36px; }
+    #dealoftheday .dotdprice {
+      font-size: 18px; }
+      #dealoftheday .dotdprice .dprixbarre {
+        text-decoration: line-through; }
+      #dealoftheday .dotdprice .dprice {
+        font-weight: 700;
+        color: #222;
+        padding-left: 5px; }
+    #dealoftheday .reduction {
+      color: white;
+      background-color: #F68773;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+    #dealoftheday .stock {
+      color: white;
+      background-color: green;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
     #dealoftheday .timer {
       display: block;
       width: 50%;
@@ -1120,11 +1236,14 @@ pour téléphone */
   #global2 {
     width: 65%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px; }
     #global2 #latestnews {
       display: grid;
       grid-template-rows: auto;
-      grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(3, 30%);
+      column-gap: 5%; }
       #global2 #latestnews #ln001 {
         grid-column: 1 / 2; }
       #global2 #latestnews #ln002 {
@@ -1180,47 +1299,172 @@ pour téléphone */
       grid-column: 6 / 7; }
     #bottompics #bp014 {
       grid-column: 7 / 8; }
+    #bottompics #followus {
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      z-index: 23;
+      display: flex; }
+      #bottompics #followus .fusquare {
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        align-self: center;
+        background-color: #F68773;
+        color: white;
+        padding: 20px; }
+        #bottompics #followus .fusquare .fusmaller {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 16px; }
+        #bottompics #followus .fusquare .fubigger {
+          font-size: 30px;
+          font-weight: 700; }
   .topsection {
-    border: 1px solid black; }
-  .nasection .napic {
-    display: block;
-    width: 80%;
-    height: auto; }
-  .nasection .blue {
-    display: inline-block;
-    position: relative;
-    margin-right: 8px;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: solid 2px #d6d3d3;
-    background-color: #5760e0; }
-  .nasection .red {
-    display: inline-block;
-    position: relative;
-    margin-right: 8px;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: solid 2px #d6d3d3;
-    background-color: #ff4343; }
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 10%;
+    padding-right: 10%; }
+    .topsection h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 1.25em; }
+    .topsection .more {
+      font-size: 16px; }
+  .tpbicons {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 25px; }
+    .tpbicons .fab {
+      color: #999;
+      padding: 10px;
+      padding-left: 25px; }
+  .tps1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50%;
+    padding-right: 10%;
+    font-size: 24px; }
+    .tps1 h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 72px; }
+    .tps1 .more {
+      font-size: 24px; }
+    .tps1 .topcolored {
+      color: #F68773;
+      text-transform: uppercase; }
+  .tps3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .tps4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white; }
+    .tps4 h3 {
+      color: white; }
+    .tps4 .more {
+      color: white; }
+  .tps5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right; }
+  .naflex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right; }
+    .naflex .nadlist {
+      list-style-type: none;
+      padding-left: 0px; }
+      .naflex .nadlist li {
+        padding-left: 25px;
+        display: inline; }
+      .naflex .nadlist a {
+        color: #999;
+        text-decoration: none; }
+        .naflex .nadlist a:active {
+          color: #999;
+          text-decoration: none; }
+      .naflex .nadlist .namenu2selected {
+        color: #222;
+        font-weight: 700; }
+  .nasection {
+    line-height: 2.5em; }
+    .nasection h3 {
+      margin-top: 5px; }
+    .nasection .prixbarre {
+      padding-right: 10px; }
+    .nasection .napic {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .nasection .blue {
+      display: inline-block;
+      position: relative;
+      margin-right: 8px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: solid 2px #d6d3d3;
+      background-color: #5760e0; }
+    .nasection .red {
+      display: inline-block;
+      position: relative;
+      margin-right: 8px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: solid 2px #d6d3d3;
+      background-color: #ff4343; }
+    .nasection .clsize {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      line-height: 1.4em;
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+      padding: 0px;
+      margin-right: 8px;
+      border: none;
+      border-radius: 50%;
+      background-color: #e0e0e0;
+      color: #999; }
   .tssectionbig2 {
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    margin-top: 20px; }
     .tssectionbig2 .tspic1 {
       display: block;
-      width: 100%;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       height: auto;
+      padding-top: 10%;
       margin-bottom: -10%; }
-    .tssectionbig2 .ts001txt {
+    .tssectionbig2 .ts001text {
       display: inline-block;
-      z-index: 10; }
+      padding-left: 10%;
+      z-index: 10;
+      line-height: 1.25em; }
+      .tssectionbig2 .ts001text .price {
+        line-height: 3em; }
   .tssectionbig1 {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    margin-top: 20px; }
     .tssectionbig1 .tspic2 {
       display: inline-block;
       width: 80%;
@@ -1229,18 +1473,79 @@ pour téléphone */
     .tssectionbig1 .ts001text {
       display: inline-block;
       z-index: 10;
-      width: 30%; }
-  .lnsection .lnpic {
-    display: block;
-    width: 100%;
-    height: auto; }
-  .kcsection {
-    border: 1px solid black; }
-  .picturerow .prpic {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover; }
+      width: 30%;
+      line-height: 2em; }
+      .tssectionbig1 .ts001text h3 {
+        font-size: 30px;
+        line-height: 1.25em; }
+      .tssectionbig1 .ts001text .price {
+        line-height: 3em; }
+      .tssectionbig1 .ts001text .more {
+        font-size: 18px; }
+  .lnsection {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 16px; }
+    .lnsection .lnpic {
+      display: block;
+      width: calc(30 / 100 * 65 / 100 * 100vw);
+      height: calc(30 / 100 * 65 / 100 * 100vw / 370 * 300);
+      object-fit: cover; }
+    .lnsection .more {
+      font-size: 18px;
+      line-height: 2em; }
+    .lnsection .lnauthor {
+      text-transform: uppercase;
+      font-size: 12px; }
+    .lnsection .lndate {
+      font-size: 12px; }
+  .kcsection h3 {
+    font-size: 16px; }
+  .mailcontainer {
+    display: flex; }
+    .mailcontainer .mailbottom {
+      align-self: flex-end;
+      justify-self: flex-end; }
+      .mailcontainer .mailbottom .kcsection2 {
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        vertical-align: bottom; }
+        .mailcontainer .mailbottom .kcsection2 .fa-envelope {
+          align-self: center;
+          font-size: 20px;
+          padding-right: 5px; }
+        .mailcontainer .mailbottom .kcsection2 form {
+          display: inline-block;
+          width: 100%;
+          align-self: flex-end; }
+          .mailcontainer .mailbottom .kcsection2 form input[type=text] {
+            border: none;
+            width: 100%; }
+            .mailcontainer .mailbottom .kcsection2 form input[type=text]:focus {
+              border: 1px solid #999;
+              border-radius: 5px; }
+        .mailcontainer .mailbottom .kcsection2 button {
+          display: inline-block;
+          justify-self: right;
+          align-self: flex-end;
+          margin-left: 5px;
+          border: none;
+          background-color: white;
+          text-transform: uppercase;
+          font-weight: 700; }
+      .mailcontainer .mailbottom .kcmailaddress {
+        color: #999;
+        background-color: #999;
+        vertical-align: baseline; }
+  .picturerow {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    .picturerow .prpic {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
   /* footer bureau */
   footer {
     font-size: 12px;

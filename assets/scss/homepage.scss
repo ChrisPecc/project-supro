@@ -121,7 +121,7 @@ pour téléphone */
         }
 
         .more:hover {
-            background-color: rgb(228, 228, 228);
+            text-decoration: underline;
         }
 
         .lnauthor {
@@ -515,6 +515,10 @@ pour téléphone */
         #bp014 {
             display: none;
         }
+
+        #followus {
+            display: none;
+        }
     }
 
     .topsection {
@@ -674,6 +678,7 @@ pour téléphone */
         }
 
         
+        
     }
 
     .lnsection {
@@ -703,6 +708,10 @@ pour téléphone */
         display: flex;
         flex-direction: row;
         align-content: stretch;
+
+        .fa-envelope {
+            display: none;
+        }
 
         form {
             display: inline-block;
@@ -933,7 +942,7 @@ pour téléphone */
         }
 
         .more:hover {
-            background-color: rgb(228, 228, 228);
+            text-decoration: underline;
         }
 
         .lnauthor {
@@ -1312,6 +1321,10 @@ pour téléphone */
         #bp014 {
             display: none;
         }
+
+        #followus {
+            display: none;
+        }
     }
 
     .topsection {
@@ -1493,6 +1506,12 @@ pour téléphone */
                 flex-direction: row;
                 align-content: stretch;
                 vertical-align: bottom;
+
+                .fa-envelope {
+                    align-self: center;
+                    font-size: 20px;
+                    padding-right: 5px;
+                }
         
                 form {
                     display: inline-block;
@@ -1676,20 +1695,96 @@ pour téléphone */
 
 @media screen and (min-width: 770px)  {
 
-    h1 {
-        display: none;
+    body {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.5em;
+
+        h1 {
+            display: none;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #222;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #222;
+            margin-bottom: 0px;
+        }
+
+        .fa-star {
+            font-size: 10px;
+            color: #F68773;
+            margin-bottom: 5px;
+        }
+
+        .fa-star-o {
+            font-size: 10px;
+            color: #F68773;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+        .prixbarre {
+            font-size: 18px;
+            text-decoration: line-through;
+        }
+
+        .more {
+            color: #222;
+            text-decoration: underline;
+            font-variant: small-caps;
+            font-weight: 700;
+        }
+
+        .more:active {
+            color: #222;
+            text-decoration: underline;
+            font-variant: small-caps;
+            font-weight: 700;
+        }
+
+        .more:hover {
+            text-decoration: underline;
+        }
+
+        .lnauthor {
+            color: #F68773;
+            font-weight: 700;
+        }
+
+        .namore {
+            font-size: 18px;
+        }
+
     }
 
     #topbox{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 75vh 25vh;
+        margin-bottom: 80px;
 
-        #sneakerpic {
+        #topboxicons {
+            grid-column: 1 / 2;
             grid-row: 1 / 2;
-            grid-column: 1 / 4;
+            z-index: 77;
         }
 
+        #dots {
+            display: none;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            z-index: 77;
+        }
+        
         #topbox001 {
             grid-row: 1 / 2;
             grid-column: 1 / 4;
@@ -1735,11 +1830,15 @@ pour téléphone */
         width: 65%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 80px;
 
         #topsellers {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 30% 30% 30%;
             grid-template-rows: auto;
+            column-gap: 5%;
+            row-gap: 40px;
+            margin-bottom: 80px;
 
             #ts001 {
                 grid-column: 1 / 2;
@@ -1762,10 +1861,35 @@ pour téléphone */
             }
         }
 
+        #newarrivalmenus {
+            display: grid;
+            grid-template-columns: 47% 47%;
+            grid-template-rows: auto;
+
+            #namenu1 {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            #namenu2 {
+                display: none;
+                grid-row: 2 / 3;
+            }
+
+            #namenu3 {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+        }
+
+
         #newarrival {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 5%;
+            row-gap: 40px;
             grid-template-rows: auto;
+            margin-top: 20px;
 
             #na001 {
                 grid-column: 1 / 2;
@@ -1821,6 +1945,15 @@ pour téléphone */
                 display: none;
             }
 
+            #nadiscover {
+                grid-column: 1 / 4;
+                grid-row: 3 / 4;
+
+                text-align: center;
+
+                padding-top: 15px;
+            }
+
         }
     }
 
@@ -1837,6 +1970,54 @@ pour téléphone */
         background-repeat: no-repeat;
         background-position: 60%;
 
+        font-size: 20px;
+        line-height: 2em;
+
+        h3 {
+            font-size: 36px;
+        }
+        
+        .dotdprice {
+            font-size: 18px;
+
+            .dprixbarre {
+                text-decoration: line-through;
+            }
+
+            .dprice {
+                font-weight: 700;
+                color: #222;
+                padding-left: 5px;
+            }
+            
+        }
+
+        .reduction {
+            color: white;
+            background-color: #F68773;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            
+        }
+
+        .stock {
+            color: white;
+            background-color: green;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+
         .timer {
             display: block;
             width: 50%;
@@ -1849,11 +2030,14 @@ pour téléphone */
         width: 65%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
 
         #latestnews {
             display: grid;
             grid-template-rows: auto;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 30%);
+            column-gap: 5%;
 
             #ln001 {
                 grid-column: 1 / 2;
@@ -1959,18 +2143,177 @@ pour téléphone */
         #bp014 {
             grid-column: 7 / 8;
         }
+
+        #followus {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+            z-index: 23;
+            display: flex;
+            
+            .fusquare {
+                height: auto;
+                margin-right: auto;
+                margin-left: auto;
+                align-self: center;
+                background-color: #F68773;
+                color: white;
+                padding: 20px;
+
+                .fusmaller {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                .fubigger {
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            }
+            
+        }
     }
 
     .topsection {
-        
-        border: 1px solid black;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            line-height: 1.25em;
+        }
+
+        .more {
+            font-size: 16px;
+        }
     
     }
 
+    .tpbicons {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 25px;
+        
+        .fab {
+            color: #999;
+            padding: 10px;
+            padding-left: 25px;
+        }
+        
+    }
+
+    .tps1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        // padding-top: 45%;
+        // padding-bottom: 45%;
+        padding-left: 50%;
+        padding-right: 10%;
+        font-size: 24px;
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 72px;
+        }
+
+        .more {
+            font-size: 24px;
+        }
+
+        .topcolored {
+            color: #F68773;
+            text-transform: uppercase;
+        }
+    }
+
+    .tps3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tps4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+        h3 {
+            color: white;
+        }
+
+        .more {
+            color: white;
+        }
+    }
+
+    .tps5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+    }
+    
+    .naflex {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+
+
+        .nadlist {
+            list-style-type: none;
+            padding-left: 0px;
+            
+    
+            li {
+                padding-left: 25px;
+                display: inline;
+            }
+    
+            a {
+                color: #999;
+                text-decoration: none;
+                &:active {
+                    color: #999;
+                    text-decoration: none;
+                }
+            }
+    
+            .namenu2selected {
+                color: #222;
+                font-weight: 700;
+            }
+        }
+    }
+
     .nasection {
+        line-height: 2.5em;
+
+        h3 {
+            margin-top: 5px;
+        }
+
+        .prixbarre {
+            padding-right: 10px;
+        }
+
+
         .napic {
             display: block;
-            width: 80%;
+            width: 100%;
             height: auto;
         }
 
@@ -1985,6 +2328,8 @@ pour téléphone */
             background-color: rgb(87, 96, 224);
         }
 
+
+
         .red {
             display: inline-block;
             position: relative;
@@ -1996,6 +2341,22 @@ pour téléphone */
             background-color: rgb(255, 67, 67);
         }
 
+        .clsize {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            line-height: 1.4em;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            padding: 0px;
+            margin-right: 8px;
+            border: none;
+            border-radius: 50%;
+            background-color: rgb(224, 224, 224);
+            color: #999;
+        }
+
             
     }
 
@@ -2003,17 +2364,27 @@ pour téléphone */
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-top: 20px;
 
         .tspic1 {
             display: block;
-            width: 100%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
             height: auto;
+            padding-top: 10%;
             margin-bottom: -10%;           
         }
 
-        .ts001txt {
+        .ts001text {
             display: inline-block;
+            padding-left: 10%;
             z-index: 10;
+            line-height: 1.25em;
+
+            .price {
+                line-height: 3em;
+            }     
         }
     }
 
@@ -2022,6 +2393,7 @@ pour téléphone */
         flex-direction: row-reverse;
         width: 100%;
         overflow: visible;
+        margin-top: 20px;
 
         .tspic2 {
             display: inline-block;
@@ -2035,32 +2407,137 @@ pour téléphone */
             display: inline-block;
             z-index: 10;
             width: 30%;
+            line-height: 2em;
+
+            h3 {
+                font-size: 30px;
+                line-height: 1.25em;
+            }
+
+            .price {
+                line-height: 3em;
+            }
+
+            .more {
+                font-size: 18px;
+            }
             
         }
 
         
     }
 
+
     .lnsection {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 16px;
+        
         .lnpic {
             display: block;
-            width: 100%;
-            height: auto;
+            width: calc(30 / 100 * 65 / 100 * 100vw);
+            height: calc(30 / 100 * 65 / 100 * 100vw / 370 * 300);
+            object-fit: cover;
         }
+
+        .more {
+            font-size: 18px;
+            line-height: 2em;
+        }
+
+        .lnauthor {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .lndate {
+            font-size: 12px;
+        }
+        
+
     }
 
     .kcsection {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    
+
+    .mailcontainer {
+        display: flex;
+
+        .mailbottom {
+            align-self: flex-end;
+            justify-self: flex-end;
+
+
+            .kcsection2 {
+                display: flex;
+                flex-direction: row;
+                align-content: stretch;
+                vertical-align: bottom;
+
+                .fa-envelope {
+                    align-self: center;
+                    font-size: 20px;
+                    padding-right: 5px;
+                }
         
-        border: 1px solid black;
+                form {
+                    display: inline-block;
+                    width: 100%;
+                    align-self: flex-end;
+                    
+                    
+        
+                    input[type=text] {             
+                        border: none;
+                        width: 100%;
+                        
+                        &:focus {
+                            border: 1px solid #999;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+           
+            
+        
+                button {
+                    display: inline-block;
+                    justify-self: right;
+                    align-self: flex-end;
+                    margin-left: 5px;
+                    border: none;
+                    background-color: white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+    
+                }
+            }
+    
+            .kcmailaddress {
+                color: #999;
+                background-color: #999;
+                vertical-align: baseline;
+            }
+        }
     }
 
     .picturerow {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
         .prpic {
             display: block;
             width: 100%;
             height: auto;
             object-fit: cover;
         }
+
+        
     }
 
 
