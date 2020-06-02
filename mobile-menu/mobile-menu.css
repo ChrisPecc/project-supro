@@ -1,0 +1,37 @@
+.header {
+  padding: 0px 50px;
+  border-bottom: 1px solid #ececec; }
+
+.logo {
+  padding: 26px 15px 30px; }
+
+.nav-menu {
+  padding: 40px; }
+
+.search {
+  position: relative;
+  box-sizing: content-box;
+  max-width: 80%;
+  border: 1px solid #d1cfcf;
+  padding: 8px;
+  margin-top: 30px;
+  border-radius: 25px; }
+  .search input {
+    border: none;
+    position: absolute;
+    left: 15px; }
+  .search i {
+    margin-right: 20px;
+    color: #d1cfcf; }
+  .search ::placeholder {
+    color: #d1cfcf; }
+
+.icon {
+  margin-top: 38px;
+  padding-left: 30px; }
+  .icon li {
+    margin: 0 10px; }
+  .icon i {
+    color: #949799;
+    font-weight: 550;
+    font-size: 20px; }
