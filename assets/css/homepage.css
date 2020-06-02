@@ -246,13 +246,28 @@ pour téléphone */
       border-radius: 5px; }
     #dealoftheday .stock {
       display: none; }
-    #dealoftheday .timer {
-      display: block;
+    #dealoftheday #timer {
       width: 100%;
+      height: auto;
       margin-left: auto;
       margin-right: auto;
-      height: 80px;
-      background-color: white; }
+      height: auto;
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: auto; }
+      #dealoftheday #timer #cdwndays {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnhours {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnmin {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnsec {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2; }
   #global2 {
     margin-left: 20px;
     margin-right: 20px;
@@ -424,6 +439,17 @@ pour téléphone */
       height: auto; }
     .nasection h3 {
       font-size: 15px; }
+  .timercells {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    line-height: 2em; }
+    .timercells .countdownnumber {
+      color: #222;
+      font-size: 30px; }
   .lnsection {
     padding-top: 20px;
     padding-bottom: 50px; }
@@ -723,11 +749,28 @@ pour téléphone */
       border-radius: 5px; }
     #dealoftheday .stock {
       display: none; }
-    #dealoftheday .timer {
-      display: block;
-      width: 60%;
-      height: 80px;
-      background-color: white; }
+    #dealoftheday #timer {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: auto; }
+      #dealoftheday #timer #cdwndays {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnhours {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnmin {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnsec {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2; }
   #global2 {
     margin-left: 20px;
     margin-right: 20px;
@@ -889,6 +932,17 @@ pour téléphone */
     display: block;
     width: 100%;
     height: auto; }
+  .timercells {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    line-height: 2em; }
+    .timercells .countdownnumber {
+      color: #222;
+      font-size: 36px; }
   .lnsection {
     padding-bottom: 40px;
     font-size: 16px; }
@@ -1228,11 +1282,25 @@ pour téléphone */
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
       border-radius: 5px; }
-    #dealoftheday .timer {
-      display: block;
-      width: 50%;
-      height: 80px;
-      background-color: white; }
+    #dealoftheday #timer {
+      width: 60%;
+      height: auto;
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: auto; }
+      #dealoftheday #timer #cdwndays {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnhours {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnmin {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; }
+      #dealoftheday #timer #cdwnsec {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2; }
   #global2 {
     width: 65%;
     margin-left: auto;
@@ -1482,6 +1550,17 @@ pour téléphone */
         line-height: 3em; }
       .tssectionbig1 .ts001text .more {
         font-size: 18px; }
+  .timercells {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    line-height: 2em; }
+    .timercells .countdownnumber {
+      color: #222;
+      font-size: 36px; }
   .lnsection {
     padding-top: 20px;
     padding-bottom: 40px;
