@@ -85,6 +85,55 @@ body {
           padding-left: 10%; }
           .header .row .icon li:hover {
             color: #f68773; }
+  /*----------test menu flottant début ----------*/
+  .hammenu {
+    padding-right: 40px;
+    width: 320px;
+    height: 500px; }
+  li {
+    color: #999;
+    padding-left: -20px;
+    list-style: none;
+    font-weight: bold; }
+    li a {
+      color: #999;
+      text-decoration: none; }
+      li a:hover {
+        color: black; }
+  .black {
+    color: black; }
+  .adress {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5; }
+    .adress:hover {
+      color: #999; }
+  .dropbtn {
+    padding-left: 35px;
+    padding-top: 10px;
+    color: #999;
+    font-size: 16px;
+    line-height: 0; }
+  .dropdown {
+    display: inline-block;
+    position: relative; }
+    .dropdown .dropdown-content {
+      right: 0;
+      display: none;
+      position: absolute;
+      min-width: 300px;
+      background-color: white;
+      margin-left: 20px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      .dropdown .dropdown-content li {
+        border-bottom: solid 1px #d1d1d1;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        margin-right: 20px; }
+  .dropdown:hover .dropdown-content {
+    display: block; }
+  /*----------test menu flottant fin ----------*/
   /*--------------fin du header-----------*/
   .chemin {
     margin-top: 10px;
