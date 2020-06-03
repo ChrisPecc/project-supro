@@ -38,6 +38,7 @@ h2 {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5em;
 
     display: grid;
     grid-template-columns: 48% 48%;
@@ -48,13 +49,13 @@ h2 {
         width: 100%;
         box-sizing: border-box;
         border-radius: 0px;
-        border: 1px solid rgb(233, 233, 233);
+        border: 1px solid #999;
     }
 
     hr {
-        background-color: rgb(233, 233, 233);
-        color: rgb(233, 233, 233);
-        border-color: rgb(233, 233, 233);
+        background-color: #999;
+        color: #999;
+        border-color: #999;
     }
 
     #areasearch {
@@ -64,7 +65,7 @@ h2 {
         padding-left: 4%;
         padding-right: 4%;
         
-        border: 1px solid rgb(233, 233, 233);
+        border: 1px solid #999;
 
         #x4 {
             
@@ -105,7 +106,7 @@ h2 {
         padding-left: 4%;
         padding-right: 4%;
 
-        border: 1px solid rgb(233, 233, 233);
+        border: 1px solid #999;
         
         #x2 {
             display: grid;
@@ -126,5 +127,128 @@ h2 {
     }
 }
 
+#storeboxes {
+    margin-top: 80px;
+    margin-bottom: 80px;
 
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+
+    display: grid;
+    grid-template-columns: 32% 64%;
+    grid-template-rows: auto;
+    column-gap: 4%;
+
+    #storelist {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        box-sizing: border-box;
+
+        height: calc(75 / 100 * 64 / 100 * 100vw);
+
+        padding-left: 4%;
+        padding-right: 4%;
+        
+        border: 1px solid #999;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto;
+
+        #storetitle {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+
+        #individualstorebox {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+
+            height: calc((75 / 100 * 64 / 100 * 100vw) - 80px);
+            
+            overflow: scroll;
+
+            box-sizing: border-box;
+
+            .store {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                box-sizing: border-box;
+
+                color: #999;
+
+                h3 {
+                    color: #222;
+                }
+    
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+                
+    
+                .textbox {
+                    width: 70%;
+                }
+            }
+        }
+
+        .store {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+            img {
+                width: 50%;
+                height: 50%;
+                padding-top: 12%;
+            }
+            
+
+            .textbox {
+                width: 70%;
+                padding-left: 8px;
+            }
+        }
+    }
+
+    #gmap {
+        border: 1px solid #999;
+
+        .vastore {
+            z-index: 5;
+            position: absolute;
+            box-sizing: border-box;
+            right: 0%;
+            bottom: 0%;
+
+            .search {
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+
+    .container {
+        position: relative;
+        padding-bottom: 100%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+
+    .map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+}
 

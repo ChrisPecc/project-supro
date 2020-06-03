@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>Contact Supro</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="page de contact pour Supro">
+        <meta name="author" content="Christophe Pecceu">
+        <meta name="viewport" content="width=devicewidth", initial-scale=1.0>
+
+        <link rel="stylesheet" href="./../assets/css/normalize.css">
+        <link rel="stylesheet" href="./../assets/css/contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+        
+        <script src="https://kit.fontawesome.com/6bc2ec6c4e.js" crossorigin="anonymous"></script>
+       
+    </head>
+    
+    <body>
+        <main>
+            <div id="sectiontitle">
+                <h1>Store Locator</h1>
+            </div>
+    
+            <div id="searchboxes">
+                <div id="areasearch">
+                    <h2>Search by area</h2>
+                    <hr>
+                    <div id="x4">
+                        <div id="country">
+                            Country 
+                            <form action="">
+                                <select name="country" class="textarea">
+                                    <option value="choose" selected>--Please Select--</option>
+                                    <option value="usa">USA</option>
+                                    <option value="UK">United Kingdom</option>
+                                </select>
+                            </form>
+                        </div>
+    
+                        <div id="state">
+                            State
+                            <form action="">
+                                <input type="text" size="100" class="textarea">
+                            </form>
+                        </div>
+    
+                        <div id="town">
+                            City
+                            <form action="">
+                                <input type="text" size="100" class="textarea">
+                            </form>
+                        </div>
+    
+                        <div id="zipcode">
+                            Zipcode
+                            <form action="">
+                                <input type="text" size="100" class="textarea">
+                            </form>
+                        </div>
+                    </div>
+                    <button class="search">search</button>
+                </div>
+    
+                <div id="distancesearch">
+                    <h2>Search by distance</h2>
+                    <hr>
+                    <div id="x2">
+                        <div id="location">
+                            Location
+                            <form action="">
+                                <input type="text" size="100" class="textarea" placeholder="Street, City, State, Zipcode, Country">
+                            </form>
+                        </div>
+    
+                        <div id="radius">
+                            radius
+                            <form action="">
+                                <input type="text" size="100" class="textarea" placeholder="Kilometer">
+                            </form>
+                        </div>
+                    </div>
+                    <button class="search">search</button>
+                </div>
+            </div>
+    
+
+            
+            <div id="storeboxes">
+                <div id="storelist">
+                    <div class="storetitle">
+                        <h2>Storelist</h2>
+                        <hr>
+                    </div>
+
+                    <div id="individualstorebox">
+                        <div id="panda" class="store">
+                            
+                            <img src="./../assets/pictures/contact/panda.jpeg" alt="">
+                            
+                            
+                            <div id="pandabox" class="textbox">
+                                <h3>Panda</h3>
+                                991 Broadway, New York, New York, Zip Code: 10006, AS 
+                                <br>
+                                <br>
+                                Phone: 1-541-754-3010
+
+                                <button class="search">View Map</button>
+                            </div>
+                            
+                        </div>
+
+                        <hr>
+
+                        <div id="curabitur" class="store">
+                            <img src="./../assets/pictures/contact/curi.jpg" alt="">
+                            <div id="curabox" class="textbox">
+                                <h3>Curabitur</h3>
+                                69 Mott St, New York, New York Zip Code: 10006, AS
+                                <br>
+                                <br>
+                                Phone: 1-541-754-3010
+
+                                <button class="search">View Map</button>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div id="tandemc" class="store">
+                            <img src="./../assets/pictures/contact/tandem-c.jpg" alt="">
+                            <div id="tandemcbox" class="textbox">
+                                <h3>Tandem-C</h3>
+                                9i Broadway, New York, New York, Zip Code: 10006, AS
+                                <br>
+                                <br>
+                                Phone: 1-541-754-3010
+
+                                <button class="search">View Map</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+    
+                </div>
+    
+                <div id="gmap">
+                    <div id="mapcontainer" class="container">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17110.56814808352!2d-73.9964213471044!3d40.70151006759847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1591182573065!5m2!1sfr!2sbe" width="400px" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <div class="vastore">
+                            <button onclick="" id="viewallstore" class="search">Show all Stores</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
