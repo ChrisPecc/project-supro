@@ -2,109 +2,108 @@
 /*format écran ordi*/
 
 header {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+    width: 100vw;
     padding-bottom: 20px;
-    margin-top: -15px;
+
 }
 
-.header {
+    .header {
+        margin-top: 5px;
+        height: 50px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ececec;
 
-    height: 50px;
-    padding-top: 25px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ececec;
-    margin: 0px;
 
-    .row {
-        display: flex;
-    
-        .logo {
-            padding: 0 14vw 0 4vw;
-            margin-top: -24px;
-
-            img {
-                width: 5vw;
-            }
-        }
-
-        .nav-menu {
-            padding-right: 14vw;
-            
-            .list-content {
-                width: 31vw;
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                    li {
-                        display: inline;
-                        font-size: 12px;
-                        font-weight: 600;
-                        padding-right: 6%;
-                            &:hover{
-                                color: #f68773;
-                            }
-                    }
-            }
-        }
-
-        .search {
-
-            input {
-                margin-top: -8px;
-                width: 12vw;
-                height: 36px;
-                border: 1px solid rgb(211, 210, 210);
-                position:absolute; 
-                padding-left: 1%;
-                border-radius: 20px;
-                
-            }
+        .row {
+            display: flex;
         
-            ::placeholder {
-                padding-top: 5px;
-                display: inline;
-                color: #d1cfcf;
-                text-align: left;
-                vertical-align: baseline;
-                
+            .logo {
+                padding: 0 14vw 0 3vw;
+                margin-top: -20px;
+
+                img {
+                    width: 5vw;
+                }
             }
 
-            i {
+            .nav-menu {
+                padding-right: 6vw;
+                
+                .list-content {
+                    width: 40vw;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                        li {
+                            display: inline;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding-right: 6%;
+                                &:hover{
+                                    color: #f68773;
+                                }
+                        }
+                }
+            }
+
+            .search {
                 box-sizing: border-box;
-                position: relative;
-                padding-left: 10vw;
-                color: #d1cfcf;
+
+                input {
+                    margin-top: -8px;
+                    width: 12vw;
+                    height: 36px;
+                    border: 1px solid rgb(211, 210, 210);
+                    position:absolute; 
+                    padding-left: 1%;
+                    border-radius: 20px;
+                    
+                }
+            
+                ::placeholder {
+                    padding-top: 5px;
+                    display: inline;
+                    color: #d1cfcf;
+                    text-align: left;
+                    vertical-align: baseline;
+                    
+                }
+
+                i {
+                    box-sizing: border-box;
+                    position: relative;
+                    padding-left: 10vw;
+                    color: #d1cfcf;
+                }
             }
+            
+            .icon {
+                box-sizing: border-box;
+                padding-left: 6vw;
+
+                ul {
+                    position: relative;
+                    width: 14vw;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    
+
+                }
+
+                li {
+                    cursor: pointer;
+                    display: inline;
+                    color: #949799;
+                    font-weight: 550;
+                    font-size: 20px;
+                    padding-left: 7% ;
+                    &:hover{
+                        color: #f68773;
+                        }
+                }
+            
+            } 
         }
-        
-        .icon {
-            padding-left: 8vw;
-            padding-right: 3vw;
-            ul {
-                position: relative;
-                width: 10vw;
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                
-
-            }
-
-            li {
-                cursor: pointer;
-                display: inline;
-                color: #949799;
-                font-weight: 550;
-                font-size: 20px;
-                padding-left: 7% ;
-                &:hover{
-                    color: #f68773;
-                    }
-            }
-        
-        } 
     }
-}
