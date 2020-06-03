@@ -26,6 +26,7 @@ body {
                 color: #333;
             }
     }
+/*--------- début header---------*/
 
     header {
         width: 90vw;
@@ -36,88 +37,106 @@ body {
         margin-top: -15px;
     }
 
-/*--------- début header---------*/
+.header {
 
-    .header {
-        width: 90vw;
-        height: 50px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #ececec;
+    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ececec;
+    margin: 0px;
+
+    .row {
         display: flex;
-        flex-direction: row;
+    
+        .logo {
+            padding: 0 14vw 0 4vw;
+            margin-top: -24px;
 
-            .row {
-                display: flex;
+            img {
+                width: 20vw;
             }
-    }
+        }
 
-    .logo {
-        padding: 0px 10px;
-    }
-    
-    img {
-        width: 80px;
-    }
-    .nav-menu {
-        .d-flex {
+        .nav-menu {
             display: none;
+            padding-right: 14vw;
+            
+            .list-content {
+                width: 31vw;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                    li {
+                        display: inline;
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding-right: 6%;
+                            &:hover{
+                                color: #f68773;
+                            }
+                    }
+            }
         }
+
+        .search {
+
+            input {
+                display: none;
+                margin-top: -8px;
+                width: 12vw;
+                height: 36px;
+                border: 1px solid rgb(211, 210, 210);
+                position:absolute; 
+                padding-left: 1%;
+                border-radius: 20px;
+                
+            }
+        
+            ::placeholder {
+                padding-top: 5px;
+                display: inline;
+                color: #d1cfcf;
+                text-align: left;
+                vertical-align: baseline;
+                
+            }
+
+            i {
+                box-sizing: border-box;
+                position: relative;
+                padding-left: 10vw;
+                color: #d1cfcf;
+            }
+        }
+        
+        .icon {
+            padding-left: 8vw;
+            padding-right: 3vw;
+            ul {
+                position: relative;
+                width: 10vw;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                
+
+            }
+
+            li {
+                cursor: pointer;
+                display: inline;
+                color: #949799;
+                font-weight: 550;
+                font-size: 20px;
+                padding-left: 7% ;
+                &:hover{
+                    color: #f68773;
+                    }
+            }
+        
+        } 
     }
-
-    .search {
-
-        position:relative;
-        box-sizing: content-box;
-        width: 0;
-        border: none;
-        padding: 0px;
-        margin-top: 0px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: row;
-    
-        input {
-            border: none;
-            position:absolute; 
-            left:15px; 
-            display: none;
-        }
-    
-        i {
-            margin-right: 20px;
-            color: #d1cfcf;
-        }
-    
-        ::placeholder {
-            color: #d1cfcf;
-        }
-    }
-    
-    .icon {
-        margin-top: 0px;
-        padding-left: 5px;
-        display: flex;
-        flex-direction: row;
-    
-        ul {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-        }
-
-        li {
-            margin: 0 0px;
-        }
-    
-        i {
-            color: #949799;
-            font-weight: 550;
-            font-size: 15px;
-        }
-    } 
-
+}
 /*--------------fin du header-----------*/
 
     .chemin {
