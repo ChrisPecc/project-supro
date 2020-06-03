@@ -3,19 +3,13 @@ body
 {
 	font-family: Roboto, sans-serif;
 	letter-spacing: 0.5px;
-
 }
 
 .hammenu
 {
-	
+	padding-right: 50px;
 	width: 320px;
 	height: 500px;
-}
-
-#cross
-{
-	color: #999;
 }
 
 li
@@ -26,13 +20,23 @@ li
 	font-weight: bold;
 }
 
-li:hover
+li a
+{
+	color: #999;
+	text-decoration: none;
+}
+
+a:hover
 {color: black;}
 
 hr
 {	
-	height:0.5px;border-width:0;color:gray;background-color:gray
-	}
+	height:0.5px;
+	border-width:0;
+	color:gray;
+	background-color:gray;
+	margin-right: 50px;
+}
 
 .black
 {
@@ -46,6 +50,11 @@ hr
 	color: #999;
 	font-size: 12px;
 	line-height: 1.5;
+}
+
+.adress:hover
+{
+	color: #999;
 }
 
 .dropbtn {

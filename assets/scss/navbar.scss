@@ -1,28 +1,25 @@
 /*Header*/
 
 header {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+    width: 100vw;
     padding-bottom: 20px;
-    margin-top: -15px;
+
 }
 
 .header {
-
+    margin-top: 5px;
     height: 50px;
     padding-top: 25px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ececec;
-    margin: 0px;
+
 
     .row {
         display: flex;
     
         .logo {
-            padding: 0 14vw 0 4vw;
-            margin-top: -24px;
+            padding: 0 10vw 0 3vw;
+            margin-top: -20px;
 
             img {
                 width: 5vw;
@@ -30,10 +27,10 @@ header {
         }
 
         .nav-menu {
-            padding-right: 14vw;
+            padding-right: 7vw;
             
             .list-content {
-                width: 31vw;
+                width: 44vw;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -41,7 +38,7 @@ header {
                         display: inline;
                         font-size: 12px;
                         font-weight: 600;
-                        padding-right: 6%;
+                        padding-right: 5%;
                             &:hover{
                                 color: #f68773;
                             }
@@ -50,6 +47,7 @@ header {
         }
 
         .search {
+            box-sizing: border-box;
 
             input {
                 margin-top: -8px;
@@ -59,6 +57,7 @@ header {
                 position:absolute; 
                 padding-left: 1%;
                 border-radius: 20px;
+                font-size: 12px;
                 
             }
         
@@ -80,14 +79,21 @@ header {
         }
         
         .icon {
-            padding-left: 8vw;
-            padding-right: 3vw;
+            box-sizing: border-box;
+            padding-left: 5vw;
+
             ul {
                 position: relative;
-                width: 10vw;
+                width: 14vw;
                 margin: 0;
                 padding: 0;
                 list-style-type: none;
+                    .loupe {
+                        display: none;
+                    }
+                    .barres {
+                        display: none;
+                    }
                 
 
             }
