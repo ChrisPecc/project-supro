@@ -13,7 +13,6 @@ pour téléphone */
     }
     
     .header {
-        margin-top: 5px;
         height: 30px;
         padding-top: 5px;
         padding-bottom: 10px;
@@ -41,15 +40,17 @@ pour téléphone */
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
-                        li {
-                            display: inline;
-                            font-size: 12px;
-                            font-weight: 600;
-                            padding-right: 6%;
-                                &:hover{
-                                    color: #f68773;
-                                }
+                    li {
+                        display: inline;
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding-right: 6%;
+                        &:hover{
+                            color: #f68773;
                         }
+                    }
+
+                    
                 }
             }
     
@@ -109,7 +110,7 @@ pour téléphone */
                     padding-left: 10%;
                     &:hover{
                         color: #f68773;
-                        }
+                    }
                     
                 }
             
@@ -163,20 +164,24 @@ pour téléphone */
         .more {
             color: #222;
             text-decoration: underline;
-            font-variant: small-caps;
+            
+            text-transform: uppercase;
             font-weight: 700;
+            &:hover{
+                color: #f68773;
+            }
         }
 
         .more:active {
             color: #222;
             text-decoration: underline;
-            font-variant: small-caps;
+            text-transform: uppercase;
             font-weight: 700;
+            &:hover{
+                color: #f68773;
+            }
         }
 
-        .more:hover {
-            text-decoration: underline;
-        }
 
         .lnauthor {
             color: #F68773;
@@ -614,6 +619,9 @@ pour téléphone */
 
         .more {
             font-size: 16px;
+            &:hover{
+                color: #f68773;
+            }
         }
     
     }
@@ -669,6 +677,9 @@ pour téléphone */
 
         .more {
             font-size: 18px;
+            &:hover{
+                color: #f68773;
+            }
         }
     }
 
@@ -682,6 +693,9 @@ pour téléphone */
 
         .more {
             color: white;
+            &:hover{
+                color: #f68773;
+            }
         }
     }
 
@@ -730,6 +744,10 @@ pour téléphone */
             &:active {
                 color: #999;
                 text-decoration: none;
+            }
+
+            &:hover{
+                color: #f68773;
             }
         }
 
@@ -787,6 +805,9 @@ pour téléphone */
         .more {
             font-size: 18px;
             line-height: 2em;
+            &:hover{
+                color: #f68773;
+            }
         }
 
         
@@ -863,6 +884,10 @@ pour téléphone */
                 text-decoration: none;
                 color: #999;
             }
+            &:hover{
+                color: #f68773;
+            }
+
         }
 
         #footer1 {
@@ -980,11 +1005,10 @@ pour téléphone */
     header {
         
         padding-bottom: 20px;
-    
+        background-color: #F2EDE9;
     }
     
     .header {
-        margin-top: 5px;
         height: 30px;
         padding-top: 5px;
         padding-bottom: 10px;
@@ -1016,9 +1040,9 @@ pour téléphone */
                             font-size: 12px;
                             font-weight: 600;
                             padding-right: 6%;
-                                &:hover{
-                                    color: #f68773;
-                                }
+                            &:hover{
+                                color: #f68773;
+                            }
                         }
                 }
             }
@@ -1078,8 +1102,8 @@ pour téléphone */
                     font-size: 18px;
                     padding-left: 10%;
                     &:hover{
-                        color: #f68773;
-                        }
+                    color: #f68773;
+                    }
                     
                 }
             
@@ -1132,20 +1156,23 @@ pour téléphone */
         .more {
             color: #222;
             text-decoration: underline;
-            font-variant: small-caps;
+            text-transform: uppercase;
             font-weight: 700;
+            &:hover{
+                color: #f68773;
+            }
         }
 
         .more:active {
             color: #222;
             text-decoration: underline;
-            font-variant: small-caps;
+            text-transform: uppercase;
             font-weight: 700;
+            &:hover{
+                color: #f68773;
+            }
         }
 
-        .more:hover {
-            text-decoration: underline;
-        }
 
         .lnauthor {
             color: #F68773;
@@ -1570,6 +1597,9 @@ pour téléphone */
 
         .more {
             font-size: 16px;
+            &:hover{
+                color: #f68773;
+            }
         }
     
     }
@@ -1609,6 +1639,9 @@ pour téléphone */
 
         .more {
             font-size: 30px;
+            &:hover{
+                color: #f68773;
+            }
         }
     }
 
@@ -1622,6 +1655,9 @@ pour téléphone */
 
         .more {
             color: white;
+            &:hover{
+                color: #f68773;
+            }
         }
     }
 
@@ -1661,6 +1697,9 @@ pour téléphone */
 
         .more {
             font-size: 18px;
+            &:hover{
+                color: #f68773;
+            }
         }
         
     }
@@ -1680,6 +1719,9 @@ pour téléphone */
             &:active {
                 color: #999;
                 text-decoration: none;
+            }
+            &:hover{
+                color: #f68773;
             }
         }
 
@@ -1725,6 +1767,9 @@ pour téléphone */
         .more {
             font-size: 18px;
             line-height: 2em;
+            &:hover{
+                color: #f68773;
+            }
         }
     }
 
@@ -1819,6 +1864,9 @@ pour téléphone */
             &:active {
                 text-decoration: none;
                 color: #999;
+            }
+            &:hover{
+                color: #f68773;
             }
         }
 
@@ -1940,11 +1988,11 @@ pour téléphone */
 
     header {
         padding-bottom: 20px;
+        background-color: #F2EDE9;
     
     }
     
     .header {
-        margin-top: 5px;
         height: 50px;
         padding-top: 25px;
         padding-bottom: 5px;
@@ -1963,22 +2011,35 @@ pour téléphone */
             }
     
             .nav-menu {
-                padding-right: 7vw;
+            
                 
                 .list-content {
                     width: 44vw;
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
-                        li {
-                            display: inline;
-                            font-size: 12px;
-                            font-weight: 600;
-                            padding-right: 5%;
-                                &:hover{
-                                    color: #f68773;
-                                }
+
+                    li {
+                        display: inline;
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding-right: 5%;
+                        &:hover{
+                            color: #f68773;
                         }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #222;
+                        &:active {
+                            text-decoration: none;
+                        color: #222;
+                        }
+                        &:hover{
+                            color: #f68773;
+                        }
+                    }
                 }
             }
     
@@ -2043,7 +2104,7 @@ pour téléphone */
                     padding-left: 7% ;
                     &:hover{
                         color: #f68773;
-                        }
+                    }
                 }
             
             } 
@@ -2097,20 +2158,24 @@ pour téléphone */
         .more {
             color: #222;
             text-decoration: underline;
-            font-variant: small-caps;
+            text-transform: uppercase;
             font-weight: 700;
+            &:hover{
+                color: #f68773;
+            }
         }
 
         .more:active {
             color: #222;
             text-decoration: underline;
-            font-variant: small-caps;
+            text-transform: uppercase;
             font-weight: 700;
+            &:hover{
+                color: #f68773;
+            }
         }
 
-        .more:hover {
-            text-decoration: underline;
-        }
+        
 
         .lnauthor {
             color: #F68773;
@@ -2463,6 +2528,7 @@ pour téléphone */
     #bottompics {
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 100%;
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: repeat(7, 1fr);
@@ -2498,30 +2564,37 @@ pour téléphone */
 
         #bp008 {
             grid-column: 1 / 2;
+            grid-row: 1 / 2;
         }
 
         #bp009 {
             grid-column: 2 / 3;
+            grid-row: 1 / 2;
         }
 
         #bp010 {
             grid-column: 3 / 4;
+            grid-row: 1 / 2;
         }
 
         #bp011 {
             grid-column: 4 / 5;
+            grid-row: 1 / 2;
         }
 
         #bp012 {
             grid-column: 5 / 6;
+            grid-row: 1 / 2;
         }
 
         #bp013 {
             grid-column: 6 / 7;
+            grid-row: 1 / 2;
         }
 
         #bp014 {
             grid-column: 7 / 8;
+            grid-row: 1 / 2;
         }
 
         #followus {
@@ -2569,6 +2642,9 @@ pour téléphone */
 
         .more {
             font-size: 16px;
+            &:hover{
+                color: #f68773;
+            }
         }
     
     }
@@ -2609,6 +2685,9 @@ pour téléphone */
 
         .more {
             font-size: 24px;
+            &:hover{
+                color: #f68773;
+            }
         }
 
         .topcolored {
@@ -2636,6 +2715,9 @@ pour téléphone */
 
         .more {
             color: white;
+            &:hover{
+                color: #f68773;
+            }
         }
     }
 
@@ -2669,6 +2751,9 @@ pour téléphone */
                 &:active {
                     color: #999;
                     text-decoration: none;
+                }
+                &:hover{
+                    color: #f68773;
                 }
             }
     
@@ -2800,6 +2885,9 @@ pour téléphone */
 
             .more {
                 font-size: 18px;
+                &:hover{
+                    color: #f68773;
+                }
             }
             
         }
@@ -2838,6 +2926,9 @@ pour téléphone */
         .more {
             font-size: 18px;
             line-height: 2em;
+            &:hover{
+                color: #f68773;
+            }
         }
 
         .lnauthor {
@@ -2928,7 +3019,7 @@ pour téléphone */
         .prpic {
             display: block;
             width: 100%;
-            height: auto;
+            height: calc(100vw / 7);
             object-fit: cover;
         }
 
@@ -2949,6 +3040,9 @@ pour téléphone */
             &:active {
                 text-decoration: none;
                 color: #999;
+            }
+            &:hover{
+                color: #f68773;
             }
         }
 

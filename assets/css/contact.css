@@ -17,20 +17,26 @@ header {
       padding: 0 10vw 0 3vw; }
       .header .row .logo img {
         width: 5vw; }
-    .header .row .nav-menu {
-      padding-right: 7vw; }
-      .header .row .nav-menu .list-content {
-        width: 44vw;
-        list-style-type: none;
-        margin: 0;
-        padding: 0; }
-        .header .row .nav-menu .list-content li {
-          display: inline;
-          font-size: 12px;
-          font-weight: 600;
-          padding-right: 5%; }
-          .header .row .nav-menu .list-content li:hover {
-            color: #f68773; }
+    .header .row .nav-menu .list-content {
+      width: 44vw;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .header .row .nav-menu .list-content li {
+        display: inline;
+        font-size: 12px;
+        font-weight: 600;
+        padding-right: 5%; }
+        .header .row .nav-menu .list-content li:hover {
+          color: #f68773; }
+      .header .row .nav-menu .list-content a {
+        text-decoration: none;
+        color: #222; }
+        .header .row .nav-menu .list-content a:active {
+          text-decoration: none;
+          color: #222; }
+        .header .row .nav-menu .list-content a:hover {
+          color: #f68773; }
     .header .row .search2 {
       box-sizing: border-box; }
       .header .row .search2 input {
@@ -100,6 +106,8 @@ h2 {
   text-transform: uppercase;
   padding: 10px 30px 10px 30px;
   font-weight: 700; }
+  .search:hover {
+    color: #f68773; }
 
 #searchboxes {
   width: 75%;

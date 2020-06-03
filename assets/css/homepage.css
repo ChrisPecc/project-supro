@@ -8,7 +8,6 @@ pour téléphone */
   header {
     padding-bottom: 20px; }
   .header {
-    margin-top: 5px;
     height: 30px;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -104,15 +103,17 @@ pour téléphone */
     body .more {
       color: #222;
       text-decoration: underline;
-      font-variant: small-caps;
+      text-transform: uppercase;
       font-weight: 700; }
+      body .more:hover {
+        color: #f68773; }
     body .more:active {
       color: #222;
       text-decoration: underline;
-      font-variant: small-caps;
+      text-transform: uppercase;
       font-weight: 700; }
-    body .more:hover {
-      text-decoration: underline; }
+      body .more:active:hover {
+        color: #f68773; }
     body .lnauthor {
       color: #F68773;
       font-weight: 700; }
@@ -384,6 +385,8 @@ pour téléphone */
       line-height: 1.25em; }
     .topsection .more {
       font-size: 16px; }
+      .topsection .more:hover {
+        color: #f68773; }
   .tpbicons {
     display: flex;
     flex-direction: row;
@@ -421,6 +424,8 @@ pour téléphone */
       margin-bottom: 0.7em; }
     .tps2 .more {
       font-size: 18px; }
+      .tps2 .more:hover {
+        color: #f68773; }
   .tps4 {
     text-align: center;
     color: white; }
@@ -428,6 +433,8 @@ pour téléphone */
       color: white; }
     .tps4 .more {
       color: white; }
+      .tps4 .more:hover {
+        color: #f68773; }
   .tps5 {
     text-align: right; }
   .tssection {
@@ -458,6 +465,8 @@ pour téléphone */
       .nadlist a:active {
         color: #999;
         text-decoration: none; }
+      .nadlist a:hover {
+        color: #f68773; }
     .nadlist .namenu2selected {
       color: #222;
       font-weight: 700; }
@@ -491,6 +500,8 @@ pour téléphone */
     .lnsection .more {
       font-size: 18px;
       line-height: 2em; }
+      .lnsection .more:hover {
+        color: #f68773; }
   .kcsection {
     padding-top: 25px; }
   .kcsection2 {
@@ -534,6 +545,8 @@ pour téléphone */
       footer a:active {
         text-decoration: none;
         color: #999; }
+      footer a:hover {
+        color: #f68773; }
     footer #footer1 {
       margin-left: 20px;
       margin-right: 20px;
@@ -594,9 +607,9 @@ pour téléphone */
 /* pour tablettes */
 @media screen and (min-width: 451px) and (max-width: 770px) {
   header {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    background-color: #F2EDE9; }
   .header {
-    margin-top: 5px;
     height: 30px;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -692,15 +705,17 @@ pour téléphone */
     body .more {
       color: #222;
       text-decoration: underline;
-      font-variant: small-caps;
+      text-transform: uppercase;
       font-weight: 700; }
+      body .more:hover {
+        color: #f68773; }
     body .more:active {
       color: #222;
       text-decoration: underline;
-      font-variant: small-caps;
+      text-transform: uppercase;
       font-weight: 700; }
-    body .more:hover {
-      text-decoration: underline; }
+      body .more:active:hover {
+        color: #f68773; }
     body .lnauthor {
       color: #F68773;
       font-weight: 700; }
@@ -958,6 +973,8 @@ pour téléphone */
       line-height: 1.25em; }
     .topsection .more {
       font-size: 16px; }
+      .topsection .more:hover {
+        color: #f68773; }
   .tpbicons {
     display: flex;
     flex-direction: row;
@@ -982,6 +999,8 @@ pour téléphone */
       line-height: 3em; }
     .tps2 .more {
       font-size: 30px; }
+      .tps2 .more:hover {
+        color: #f68773; }
   .tps4 {
     text-align: center;
     color: white; }
@@ -989,6 +1008,8 @@ pour téléphone */
       color: white; }
     .tps4 .more {
       color: white; }
+      .tps4 .more:hover {
+        color: #f68773; }
   .tps5 {
     text-align: right; }
   .tssection {
@@ -1013,6 +1034,8 @@ pour téléphone */
       line-height: 1.25em; }
     .tssection .more {
       font-size: 18px; }
+      .tssection .more:hover {
+        color: #f68773; }
   .nadlist {
     list-style-type: none;
     padding-left: 0px; }
@@ -1025,6 +1048,8 @@ pour téléphone */
       .nadlist a:active {
         color: #999;
         text-decoration: none; }
+      .nadlist a:hover {
+        color: #f68773; }
     .nadlist .namenu2selected {
       color: #222;
       font-weight: 700; }
@@ -1053,6 +1078,8 @@ pour téléphone */
     .lnsection .more {
       font-size: 18px;
       line-height: 2em; }
+      .lnsection .more:hover {
+        color: #f68773; }
   .kcsection h3 {
     font-size: 16px; }
   .mailcontainer {
@@ -1107,6 +1134,8 @@ pour téléphone */
       footer a:active {
         text-decoration: none;
         color: #999; }
+      footer a:hover {
+        color: #f68773; }
     footer #footer1 {
       margin-left: 20px;
       margin-right: 20px;
@@ -1172,9 +1201,9 @@ pour téléphone */
 /* pour bureau */
 @media screen and (min-width: 770px) {
   header {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    background-color: #F2EDE9; }
   .header {
-    margin-top: 5px;
     height: 50px;
     padding-top: 25px;
     padding-bottom: 5px;
@@ -1185,20 +1214,26 @@ pour téléphone */
         padding: 0 10vw 0 3vw; }
         .header .row .logo img {
           width: 5vw; }
-      .header .row .nav-menu {
-        padding-right: 7vw; }
-        .header .row .nav-menu .list-content {
-          width: 44vw;
-          list-style-type: none;
-          margin: 0;
-          padding: 0; }
-          .header .row .nav-menu .list-content li {
-            display: inline;
-            font-size: 12px;
-            font-weight: 600;
-            padding-right: 5%; }
-            .header .row .nav-menu .list-content li:hover {
-              color: #f68773; }
+      .header .row .nav-menu .list-content {
+        width: 44vw;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+        .header .row .nav-menu .list-content li {
+          display: inline;
+          font-size: 12px;
+          font-weight: 600;
+          padding-right: 5%; }
+          .header .row .nav-menu .list-content li:hover {
+            color: #f68773; }
+        .header .row .nav-menu .list-content a {
+          text-decoration: none;
+          color: #222; }
+          .header .row .nav-menu .list-content a:active {
+            text-decoration: none;
+            color: #222; }
+          .header .row .nav-menu .list-content a:hover {
+            color: #f68773; }
       .header .row .search {
         box-sizing: border-box; }
         .header .row .search input {
@@ -1273,15 +1308,17 @@ pour téléphone */
     body .more {
       color: #222;
       text-decoration: underline;
-      font-variant: small-caps;
+      text-transform: uppercase;
       font-weight: 700; }
+      body .more:hover {
+        color: #f68773; }
     body .more:active {
       color: #222;
       text-decoration: underline;
-      font-variant: small-caps;
+      text-transform: uppercase;
       font-weight: 700; }
-    body .more:hover {
-      text-decoration: underline; }
+      body .more:active:hover {
+        color: #f68773; }
     body .lnauthor {
       color: #F68773;
       font-weight: 700; }
@@ -1508,6 +1545,7 @@ pour téléphone */
   #bottompics {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(7, 1fr); }
@@ -1526,19 +1564,26 @@ pour téléphone */
     #bottompics #bp007 {
       display: none; }
     #bottompics #bp008 {
-      grid-column: 1 / 2; }
+      grid-column: 1 / 2;
+      grid-row: 1 / 2; }
     #bottompics #bp009 {
-      grid-column: 2 / 3; }
+      grid-column: 2 / 3;
+      grid-row: 1 / 2; }
     #bottompics #bp010 {
-      grid-column: 3 / 4; }
+      grid-column: 3 / 4;
+      grid-row: 1 / 2; }
     #bottompics #bp011 {
-      grid-column: 4 / 5; }
+      grid-column: 4 / 5;
+      grid-row: 1 / 2; }
     #bottompics #bp012 {
-      grid-column: 5 / 6; }
+      grid-column: 5 / 6;
+      grid-row: 1 / 2; }
     #bottompics #bp013 {
-      grid-column: 6 / 7; }
+      grid-column: 6 / 7;
+      grid-row: 1 / 2; }
     #bottompics #bp014 {
-      grid-column: 7 / 8; }
+      grid-column: 7 / 8;
+      grid-row: 1 / 2; }
     #bottompics #followus {
       grid-column: 4 / 5;
       grid-row: 1 / 2;
@@ -1571,6 +1616,8 @@ pour téléphone */
       line-height: 1.25em; }
     .topsection .more {
       font-size: 16px; }
+      .topsection .more:hover {
+        color: #f68773; }
   .tpbicons {
     display: flex;
     flex-direction: column;
@@ -1595,6 +1642,8 @@ pour téléphone */
       font-size: 72px; }
     .tps1 .more {
       font-size: 24px; }
+      .tps1 .more:hover {
+        color: #f68773; }
     .tps1 .topcolored {
       color: #F68773;
       text-transform: uppercase; }
@@ -1612,6 +1661,8 @@ pour téléphone */
       color: white; }
     .tps4 .more {
       color: white; }
+      .tps4 .more:hover {
+        color: #f68773; }
   .tps5 {
     display: flex;
     flex-direction: column;
@@ -1634,6 +1685,8 @@ pour téléphone */
         .naflex .nadlist a:active {
           color: #999;
           text-decoration: none; }
+        .naflex .nadlist a:hover {
+          color: #f68773; }
       .naflex .nadlist .namenu2selected {
         color: #222;
         font-weight: 700; }
@@ -1722,6 +1775,8 @@ pour téléphone */
         line-height: 3em; }
       .tssectionbig1 .ts001text .more {
         font-size: 18px; }
+        .tssectionbig1 .ts001text .more:hover {
+          color: #f68773; }
   .timercells {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -1745,6 +1800,8 @@ pour téléphone */
     .lnsection .more {
       font-size: 18px;
       line-height: 2em; }
+      .lnsection .more:hover {
+        color: #f68773; }
     .lnsection .lnauthor {
       text-transform: uppercase;
       font-size: 12px; }
@@ -1795,7 +1852,7 @@ pour téléphone */
     .picturerow .prpic {
       display: block;
       width: 100%;
-      height: auto;
+      height: calc(100vw / 7);
       object-fit: cover; }
   /* footer bureau */
   footer {
@@ -1808,6 +1865,8 @@ pour téléphone */
       footer a:active {
         text-decoration: none;
         color: #999; }
+      footer a:hover {
+        color: #f68773; }
     footer #footer1 {
       margin-left: 17.5%;
       margin-right: 17.5%;
