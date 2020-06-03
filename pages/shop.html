@@ -11,18 +11,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-      <!--Plugin CSS file with desired skin-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-      <!--jQuery-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      
-      <!--Plugin JavaScript file-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
+
+        <!-- nav menu for desktop -->
+
         <div class="header">
             <div class="row">
                 <div class="col-md-2 text-left">
@@ -77,10 +80,49 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <main class="container">
+        <!-- nav menu for tablet and mobile -->
 
+        <div class="row tablet-header">
+            <div class="col-sm-12 d-flex justify-content-between mobile-0-padding">
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <span class="fa fa-search"></span>
+                        <span class="fa fa-bars"></span>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Home</li><hr>
+                            <li>Shop</li><hr>
+                            <li>Collection</li><hr>
+                            <li>Pages</li><hr>
+                            <li>Blog</li><hr>
+                            <li>Contact</li><hr><br>
+                            <li class="black">Contact us</li><br>
+                            <li class="adress">69 Halsey St, Ny 10002, New York,<br>
+                            United States support.center@unero.co<br>
+                            (0091) 8547 632521</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <a href="#">
+                            <img src="../assets/images/shop/logo.png" alt="supro-01">
+                        </a>
+                    </h1>
+                </div>
+                <div class="dropbtn">
+                    <span class="fal fa-shopping-cart"></span>
+                    <span class="fal fa-user"></span>
+                </div>
+            </div>
+        </div>
+
+        
+
+      <div class="tablette-path">
+        <h2 id="h2">Shoes</h2>
         <div class="path">
             <h2>Home</h2>
             <span>.</span>
@@ -88,10 +130,34 @@
             <span>.</span>
             <h2>Shoes</h2>
         </div>
-        
+      </div>
+
+      <div class="row tablette-filter">
+          <div class="col-sm-4 col-4">
+            <a href="#">FILTER</a>
+          </div>
+          <div class="col-sm-8 col-8 tablette-icon">
+            <i class="fas fa-border-none"></i>
+            <i class="fal fa-list-ul"></i>
+          </div>
+      </div>
+
+      
+    </header>
+
+    <main class="container">
+
+            <div class="path tablette-remove">
+                <h2>Home</h2>
+                <span>.</span>
+                <h2>Fashion</h2>
+                <span>.</span>
+                <h2>Shoes</h2>
+            </div>
+       
         <div class="row option">
 
-            <div class="col-md-3">
+            <div class="col-md-3 tablette-remove">
                 <h2>Shoes</h2>
             </div>
             <div class="col-md-6 col2 mb-2 pb-3 rowOptionModified">
@@ -125,35 +191,43 @@
             <!-- Products with images -->
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/calvin.jpg" class="mw-100" alt="Sac à main">
-                <p class="mt-4 mb-0">Calvin Klein Logo Sweatpants</p>
-                <p class="prix mt-1">$86.00</p>
+                <div class="tablette-text-left">
+                    <p class="mt-4 mb-0">Calvin Klein Logo Sweatpants</p>
+                    <p class="prix mt-1">$86.00</p>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/short.jpg" class="mw-100" alt="Sweatshirt bleu">
-                <p class="mb-0 mt-4">Short Sleeved Hoodie</p>
-                <span class="stars mb-0">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="prix mb-0 mt-1">$59.00</p>
-                <ul class="round mt-1">
-                    <li>
-                        <i class="fas fa-circle"></i>
-                    </li>
-                    <li>
-                        <i class="fas fa-circle"></i>
-                    </li>
-                </ul>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Short Sleeved Hoodie</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mb-0 mt-1">$59.00</p>
+                </div>
+                <div class="tablette-list-left">
+                    <ul class="round mt-1">
+                        <li>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/woleen.jpg" class="mw-100" alt="Blouse bleu">
-                <p class="mb-0 mt-4">Woleen Tee</p>
-                <p class="prix mt-1">$59.00</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Woleen Tee</p>
+                    <p class="prix mt-1">$59.00</p>
+                </div>
             </div>
 
             <!-- right settings 2nd part -->
@@ -218,31 +292,39 @@
         </div>
 
         <div class="row mb-5">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/brown.jpg" class="mw-100" alt="Lunette de soleil">
-                <p class="mb-0 mt-4">Brown Jacket</p>
-                <div class="d-flex mt-1">
-                    <p class="prix" style="text-decoration: line-through;">$89.00</p>
-                    <p style="color: black !important; padding-left: 15px;">$80.00</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Brown Jacket</p>
+                    <div class="d-flex mt-1">
+                        <p class="prix" style="text-decoration: line-through;">$89.00</p>
+                        <p style="color: black !important; padding-left: 15px;">$80.00</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/pink.jpg" class="mw-100" alt="Jupe rouge">
-                <p class="mb-0 mt-4">Pink Leather Watch</p>
-                <p class="prix mt-1 mb-0">$95.99</p>
-                <ul class="size mt-1">
-                    <li>
-                        <P>M</P>
-                    </li>
-                    <li>
-                        <p>XS</p>
-                    </li>
-                </ul>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Pink Leather Watch</p>
+                    <p class="prix mt-1 mb-0">$95.99</p>
+                </div>
+                <div class="tablette-list-left">
+                    <ul class="size mt-1">
+                        <li>
+                            <P>M</P>
+                        </li>
+                        <li>
+                            <p>XS</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center">
                 <img src="../assets/images/shop/cuffed.jpg" class="mw-100" alt="Veste noir">
-                <p class="mb-0 mt-4">Cuffed Beanie</p>
-                <p class="prix mt-1">$68.00</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Cuffed Beanie</p>
+                    <p class="prix mt-1">$68.00</p>
+                </div>
             </div>
 
             <!-- right settings 3rd part -->
@@ -257,59 +339,71 @@
         </div>
 
         <div class="row mb-5">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/short.jpg" class="mw-100" alt="sweatshirt bleu">
-                <p class="mb-0 mt-4">Metallic Frame Glasses Trandy</p>
-                <span class="stars mb-0">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="prix mt-1">$60.50</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Metallic Frame Glasses Trandy</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mt-1">$60.50</p>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/calvin.jpg" class="mw-100" alt="Sac à main">
-                <p class="mb-0 mt-4">Flower Designs Blouse</p>
-                <span class="stars mb-0">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="prix mt-1">$89.90</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Flower Designs Blouse</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mt-1">$89.90</p>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center">
                 <img src="../assets/images/shop/leather.jpg" class="mw-100" alt="Chaussure noir">
-                <p class="mb-0 mt-4">Leather Shop Bag</p>
-                <p class="prix mt-1">$59.90</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Leather Shop Bag</p>
+                    <p class="prix mt-1">$59.90</p>
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/woleen.jpg" class="mw-100" alt="Blouse bleu">
-                <p class="mb-0 mt-4">Denim Jacket</p>
-                <span class="stars mb-0">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <p class="prix mt-1">$45.00</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Denim Jacket</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mt-1">$45.00</p>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
                 <img src="../assets/images/shop/hooded.jpg" class="mw-100" alt="Chaussure été">
-                <p class="mb-0 mt-4">Hooded Sweatshirt</p>
-                <p class="prix mt-1">$55.00</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Hooded Sweatshirt</p>
+                    <p class="prix mt-1">$55.00</p>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 tablette-content-center">
                 <img src="../assets/images/shop/autumn.jpg" class="mw-100" alt="Lunette de soleil">
-                <p class="mb-0 mt-4">Autumn Coat with Pockets</p>
-                <p class="prix mt-1">$33.00</p>
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Autumn Coat with Pockets</p>
+                    <p class="prix mt-1">$33.00</p>
+                </div>
             </div>
         </div>
 

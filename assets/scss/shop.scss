@@ -289,48 +289,206 @@ body {
 
 // Media queries
 
-// @media only screen and (max-width: 1350px) {
-//     .search {
-//         i {
-//             visibility:hidden;
-//         }
-//     }
-// }
+@media only screen and (max-width: 720px) {
+    .rowOptionModified, .settings, .payment, .top {
+        display: none !important;
+    }
 
-// @media only screen and (max-width: 1200px) {
-//     .rowOptionModified {
-//         visibility:hidden;
-//     }
-// }
+    .tablette-content-center {
+        text-align: center !important;
+    }
 
+    .tablette-text-left {
+        text-align: left;
+        margin-left: 21%;
+    }
 
-// @media only screen and (max-width: 1145px) and (min-width: 801px){
-//     #searching {
-//         display:none;
-//     } 
+    .tablette-list-left {
+        margin-left: 21%;
+    }
 
-//     .nav-menu {
-//         margin-left: 130px;
-//         li {
-//             padding-right: 10px;
-//         }
-//     }
+    .tablette-space-img {
+        margin-bottom: 3rem !important;
+    }
 
-//     .icon {
-//         margin-left: 100px;
-//     }
-// }
+    .tablette-remove {
+        display: none !important;
+    }
 
-// @media only screen and (max-width: 800px) {
-//     .settings {
-//         display: none;
-//     }
+    .path {
+        :nth-child(1) {
+            margin-left: 28% !important;
+        }
+    }
+
+    .header {
+        display: none;
+    }
+
+    .tablette-path {
+        background-color: #e4e7e8;
+
+        #h2 {
+            padding-top: 10px;
+            font-size: 30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .path {
+            margin-left: 55px;
+        }
+    }
+
+    .dropbtn {
+        padding-top: 40px !important;
+
+        span {
+            padding-right: 12px;
+
+            &:hover {
+                color: #f68773;
+            }
+        }
+    }
+
+    .mobile-0-padding {
+        padding: 0px 0px;
+        padding-left: 12px;
+    }
+
+    .tablette-filter {
+        margin-top: 30px;
+
+        a {
+            border: 1px solid #f68773;
+            background-color: #f68773;
+            padding: 8px 22px;
+            color: #fff;
+            margin-left: 20px;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: none;
+                background-color: rgb(19, 18, 18);
+                border: 1px solid rgb(19, 18, 18);
+            }
+        }
+
+        .tablette-icon {
+            text-align: end;
+
+            :nth-child(2) {
+                margin-right: 20px;
+                padding-left: 10px;
+            }
+            
+            i {
+                color: #999;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .path {
+        margin-left: 0px !important;
+
+        :nth-child(1) {
+            margin-left: 70px !important;
+        }
+    }
     
-//     .payment, .top {
-//         display: none !important;
-//     }
+    .tablette-text-left, .tablette-list-left {
+        margin-left: 23px !important;
+    }
+}
 
-//     .socialMedia {
-//         width: auto;
-//     }
-// }
+@media only screen and (min-width: 721px) {
+    .tablette-h2 {
+        display: none;
+    }
+
+    .dropdown {
+        display: none !important;
+    }
+
+    .tablette-path {
+        display: none;
+    }
+
+    .tablette-filter {
+        display: none;
+    }
+
+    .tablet-header {
+        display: none;
+    }
+}
+
+// nav menu for tablet and mobile
+
+.hammenu
+{
+	
+	width: 320px;
+	height: 500px;
+}
+
+#cross
+{
+	color: #999;
+}
+
+li
+{
+	color: #999;
+	padding-left: -20px;
+	list-style: none;
+	font-weight: bold;
+}
+
+li:hover
+{color: black;}
+
+hr
+{	
+	height:0.5px;border-width:0;color:gray;background-color:gray
+	}
+
+.black
+{
+	color: black;
+
+}
+
+
+.adress
+{
+	color: #999;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.dropbtn {
+  color: #999;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 320px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
