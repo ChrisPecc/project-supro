@@ -14,7 +14,9 @@ body {
 .nav-menu {
   padding: 40px; }
   .nav-menu a {
-    color: black; }
+    color: black;
+    font-size: 12px;
+    font-weight: 600; }
     .nav-menu a:hover {
       text-decoration: none;
       color: #f68773; }
