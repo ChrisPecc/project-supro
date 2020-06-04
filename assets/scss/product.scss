@@ -140,12 +140,7 @@ body {
         }
     }
 
-/*----------test menu flottant début ----------*/
-    .hammenu {
-        padding-right: 40px;
-        width: 320px;
-        height: 500px;
-    }
+/*---------- menu flottant début ----------*/
 
     li {
         color: #999;
@@ -165,16 +160,24 @@ body {
     }
 
     .black {
+        padding-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
         color: black;
+        border-bottom: none;
     }
 
     .adress {
         color: #999;
         font-size: 12px;
         line-height: 1.5;
-
-            &:hover {
+        text-decoration: none;
+            a {
+                text-decoration: none;
                 color: #999;
+                &:hover {
+                    color: #333;
+                }
             }
     }
 
@@ -184,7 +187,7 @@ body {
         padding-top: 10px;
         color: #999;
 
-        font-size: 16px;
+        font-size: 15px;
         line-height: 0;
     }
 
@@ -216,7 +219,8 @@ body {
     }
 
 
-/*----------test menu flottant fin ----------*/
+/*---------- menu flottant fin ----------*/
+
 /*--------------fin du header-----------*/
 
     .chemin {
@@ -481,6 +485,7 @@ body {
                         width: 73vw;
                         height: 40px;
                         border: none;
+                        font-size: 12px;
                         text-transform: uppercase;
                         font-weight: 600;
                             &:hover {
@@ -741,10 +746,14 @@ body {
         }
     
         hr {
-            background-color: #999;
+            background-color: rgb(219, 219, 219);
+            color: rgb(211, 210, 210);
         }
         
         #footer2 {
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 20px;
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: auto;
@@ -752,6 +761,7 @@ body {
             #copyright {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
+                padding-bottom: 10px;
     
                 strong {
                     color: #222;
@@ -761,7 +771,6 @@ body {
             #pritou {
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;
-    
                 font-size: 14px;
     
                 .pritouspa {
@@ -808,116 +817,194 @@ body {
 
 /*--------- début header---------*/
 
-header {
-    width: 100%;
-    padding-bottom: 20px;
-
-}
-
-.header {
-    margin-top: 5px;
-    height: 30px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ececec;
-
-
-    .row {
+    header {
         width: 100%;
-        display: flex;
-        .logo {
-            padding: 5px 25vw 0 5vw;
+        padding-bottom: 20px;
 
-            img {
-                width: 23vw;
-                max-width: 90px;
-            }
-        }
+    }
 
-        .nav-menu {
-            display: none;
-            padding-right: 6vw;
-            
-            .list-content {
-                width: 40vw;
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                    li {
-                        display: inline;
-                        font-size: 12px;
-                        font-weight: 600;
-                        padding-right: 6%;
-                            &:hover{
-                                color: #f68773;
-                            }
-                    }
-            }
-        }
+    .header {
+        margin-top: 5px;
+        height: 30px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ececec;
 
-        .search {
-            display: none;
-            box-sizing: border-box;
-            
 
-            input {
-                
-                margin-top: -8px;
-                width: 12vw;
-                height: 36px;
-                border: 1px solid rgb(211, 210, 210);
-                position:absolute; 
-                padding-left: 1%;
-                border-radius: 20px;
-                
-            }
-        
-            ::placeholder {
-                
-                padding-top: 15px;
-                display: inline;
-                color: #d1cfcf;
-                text-align: left;
-                vertical-align: baseline;
-                
-            }
+        .row {
+            width: 100%;
+            display: flex;
+            .logo {
+                padding: 5px 25vw 0 5vw;
 
-            i {
-                box-sizing: border-box;
-                position: relative;
-                padding-left: 10vw;
-                color: #d1cfcf;
-            }
-        }
-        
-        .icon {
-            padding-top: 8px;
-
-            ul {
-                margin: 0;
-                list-style-type: none;
-                display: flex;
-                padding-left: 25vw;
-                .engrenage {
-                    display: none;
+                img {
+                    width: 23vw;
+                    max-width: 90px;
                 }
             }
 
-            li {
-                cursor: pointer;
-
-                color: #949799;
-                font-size: 18px;
-                padding-left: 10%;
-                &:hover{
-                    color: #f68773;
-                    }
+            .nav-menu {
+                display: none;
+                padding-right: 6vw;
                 
+                .list-content {
+                    width: 40vw;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                        li {
+                            display: inline;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding-right: 6%;
+                                &:hover{
+                                    color: #f68773;
+                                }
+                        }
+                }
             }
-        
-        } 
+
+            .search {
+                display: none;
+                box-sizing: border-box;
+                
+
+                input {
+                    
+                    margin-top: -8px;
+                    width: 12vw;
+                    height: 36px;
+                    border: 1px solid rgb(211, 210, 210);
+                    position:absolute; 
+                    padding-left: 1%;
+                    border-radius: 20px;
+                    
+                }
+            
+                ::placeholder {
+                    
+                    padding-top: 15px;
+                    display: inline;
+                    color: #d1cfcf;
+                    text-align: left;
+                    vertical-align: baseline;
+                    
+                }
+
+                i {
+                    box-sizing: border-box;
+                    position: relative;
+                    padding-left: 10vw;
+                    color: #d1cfcf;
+                }
+            }
+            
+            .icon {
+                padding-top: 8px;
+
+                ul {
+                    margin: 0;
+                    list-style-type: none;
+                    display: flex;
+                    padding-left: 25vw;
+                    .engrenage {
+                        display: none;
+                    }
+                }
+
+                li {
+                    cursor: pointer;
+
+                    color: #949799;
+                    font-size: 18px;
+                    padding-left: 10%;
+                    &:hover{
+                        color: #f68773;
+                        }
+                    
+                }
+            
+            } 
+        }
     }
-}
+/*---------- menu flottant début ----------*/
+
+    li {
+        color: #999;
+        padding-left: -20px;
+        list-style: none;
+        font-weight: bold;
+        
+
+        a {
+            color: #999;
+            text-decoration: none;
+
+                &:hover {
+                    color: black;
+                }
+        }
+    }
+
+    .black {
+        padding-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        border-bottom: none;
+    }
+
+    .adress {
+        color: #999;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #999;
+                &:hover {
+                    color: #333;
+                }
+            }
+    }
+
+    .dropbtn {
+
+        padding-left: 35px;
+        padding-top: 10px;
+        color: #999;
+
+        font-size: 15px;
+        line-height: 0;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+
+        .dropdown-content {
+            right: 0;
+            display: none;
+            position: absolute;
+            min-width: 300px;
+            background-color: white;
+            margin-left: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+                li {
+                    border-bottom: solid 1px rgb(209, 209, 209);
+                    padding-bottom: 12px;
+                    padding-top: 12px;
+                    margin-right: 20px;
+                }
+        }
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+/*---------- menu flottant fin ----------*/
 
 /*--------------fin du header-----------*/
 
@@ -1488,13 +1575,16 @@ header {
     
         hr {
             background-color: #999;
+            color: rgb(211, 210, 210);
         }
     
         #footer2 {
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: auto;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 15px;
     
             #copyright {
                 grid-column: 1 / 2;
@@ -1538,6 +1628,7 @@ header {
 
     article {
         width: 70vw;
+        margin: 0 auto;
 
     }
     section {
@@ -1562,7 +1653,6 @@ header {
 
     header {
         padding-bottom: 20px;
-
     }
 
     .header {
@@ -1599,6 +1689,12 @@ header {
                             font-weight: 600;
                             padding-right: 5%;
                                 &:hover{
+                                    color: #f68773;
+                                }
+                        }
+                        a {
+                            font-size: 12px;
+                                &:hover {
                                     color: #f68773;
                                 }
                         }
@@ -1667,11 +1763,91 @@ header {
                     &:hover{
                         color: #f68773;
                         }
+                    
                 }
             
             } 
         }
     }
+
+    /*---------- menu flottant début ----------*/
+
+    li {
+        color: #999;
+        padding-left: -20px;
+        list-style: none;
+        font-weight: bold;
+        
+
+        a {
+            color: #999;
+            text-decoration: none;
+
+                &:hover {
+                    color: black;
+                }
+        }
+    }
+
+    .black {
+        padding-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        border-bottom: none;
+    }
+
+    .adress {
+        color: #999;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #999;
+                &:hover {
+                    color: #333;
+                }
+            }
+    }
+
+    .dropbtn {
+        padding-left: 35px;
+        padding-top: 10px;
+        color: #999;
+        font-size: 15px;
+        line-height: 0;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+
+        .dropdown-content {
+            display: none;
+            right: 0;
+            display: none;
+            position: absolute;
+            min-width: 300px;
+            background-color: white;
+            margin-left: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+                li {
+                    border-bottom: solid 1px rgb(209, 209, 209);
+                    padding-bottom: 12px;
+                    padding-top: 12px;
+                    margin-right: 20px;
+                }
+        }
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+/*---------- menu flottant fin ----------*/
 
 /*--------------fin du header-----------*/
 
@@ -2008,7 +2184,7 @@ header {
         margin: 0 auto;
         border-top: solid 1px rgb(201, 201, 201);
         width: 70vw;
-        margin-top: 20px;
+        margin-top: 40px;
 
         .menu-description {
 
@@ -2025,7 +2201,7 @@ header {
                 li {
                     display: inline-block;
                     align-content: center;
-                    margin: 20px auto;
+                    margin: 0 auto;
                     cursor: pointer;
                     text-decoration: none;
                     text-align: center;
@@ -2097,7 +2273,7 @@ header {
     .produits-divers {
 
         width: 70vw;
-
+        margin-left: 3%;
 
         h2 {
             text-align: center;
@@ -2182,12 +2358,11 @@ header {
     
         #footer1 {
             margin-left: 17.5%;
-            margin-right: 17.5%;
+            margin-right: 15.5%;
             display: grid;
             grid-template-columns: 40% 18% 18% 18%;
             column-gap: 2%;
             grid-template-rows: auto;
-    
             margin-bottom: 20px;
             
             #ftcontact {
@@ -2225,7 +2400,7 @@ header {
                 line-height: 3em;
     
                 .ftcontactpic {
-                    padding-bottom: 0.75em;
+                    padding-bottom: 30px;
                 }
     
                 .fa-map-marker-alt {
@@ -2244,6 +2419,7 @@ header {
                 .ftaddress {
                     display: inline-block;
                     line-height: 1em;
+                    font-size: 14px;
                 }
     
                 .fas {
@@ -2257,6 +2433,7 @@ header {
                     padding: 2px;
                     padding-right: 10px;
                 }
+
             }
             
             .listssection {
@@ -2273,7 +2450,7 @@ header {
                 .liform {
                     list-style-type: none;
                     padding-left: 0px;
-                    line-height: 2em;
+                    line-height: 30px;                    
                 }
                 
                 select {

@@ -85,11 +85,7 @@ body {
           padding-left: 10%; }
           .header .row .icon li:hover {
             color: #f68773; }
-  /*----------test menu flottant début ----------*/
-  .hammenu {
-    padding-right: 40px;
-    width: 320px;
-    height: 500px; }
+  /*---------- menu flottant début ----------*/
   li {
     color: #999;
     padding-left: -20px;
@@ -101,18 +97,26 @@ body {
       li a:hover {
         color: black; }
   .black {
-    color: black; }
+    padding-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: none; }
   .adress {
     color: #999;
     font-size: 12px;
-    line-height: 1.5; }
-    .adress:hover {
+    line-height: 1.5;
+    text-decoration: none; }
+    .adress a {
+      text-decoration: none;
       color: #999; }
+      .adress a:hover {
+        color: #333; }
   .dropbtn {
     padding-left: 35px;
     padding-top: 10px;
     color: #999;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 0; }
   .dropdown {
     display: inline-block;
@@ -133,7 +137,7 @@ body {
         margin-right: 20px; }
   .dropdown:hover .dropdown-content {
     display: block; }
-  /*----------test menu flottant fin ----------*/
+  /*---------- menu flottant fin ----------*/
   /*--------------fin du header-----------*/
   .chemin {
     margin-top: 10px;
@@ -319,6 +323,7 @@ body {
         width: 73vw;
         height: 40px;
         border: none;
+        font-size: 12px;
         text-transform: uppercase;
         font-weight: 600; }
         .photo-description .infos-image .resize-validatio .validation .before:hover {
@@ -488,14 +493,19 @@ body {
         margin-top: 1em;
         margin-bottom: 2em; }
     footer hr {
-      background-color: #999; }
+      background-color: #dbdbdb;
+      color: #d3d2d2; }
     footer #footer2 {
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 20px;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto; }
       footer #footer2 #copyright {
         grid-column: 1 / 2;
-        grid-row: 1 / 2; }
+        grid-row: 1 / 2;
+        padding-bottom: 10px; }
         footer #footer2 #copyright strong {
           color: #222; }
       footer #footer2 #pritou {
@@ -593,6 +603,59 @@ body {
           padding-left: 10%; }
           .header .row .icon li:hover {
             color: #f68773; }
+  /*---------- menu flottant début ----------*/
+  li {
+    color: #999;
+    padding-left: -20px;
+    list-style: none;
+    font-weight: bold; }
+    li a {
+      color: #999;
+      text-decoration: none; }
+      li a:hover {
+        color: black; }
+  .black {
+    padding-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: none; }
+  .adress {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: none; }
+    .adress a {
+      text-decoration: none;
+      color: #999; }
+      .adress a:hover {
+        color: #333; }
+  .dropbtn {
+    padding-left: 35px;
+    padding-top: 10px;
+    color: #999;
+    font-size: 15px;
+    line-height: 0; }
+  .dropdown {
+    display: inline-block;
+    position: relative; }
+    .dropdown .dropdown-content {
+      right: 0;
+      display: none;
+      position: absolute;
+      min-width: 300px;
+      background-color: white;
+      margin-left: 20px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      .dropdown .dropdown-content li {
+        border-bottom: solid 1px #d1d1d1;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        margin-right: 20px; }
+  .dropdown:hover .dropdown-content {
+    display: block; }
+  /*---------- menu flottant fin ----------*/
   /*--------------fin du header-----------*/
   .chemin {
     margin-top: 10px;
@@ -976,12 +1039,15 @@ body {
           margin-top: 1em;
           margin-bottom: 3em; }
     footer hr {
-      background-color: #999; }
+      background-color: #999;
+      color: #d3d2d2; }
     footer #footer2 {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto;
-      margin-bottom: 30px; }
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-left: 15px; }
       footer #footer2 #copyright {
         grid-column: 1 / 2;
         grid-row: 1 / 2; }
@@ -1004,7 +1070,8 @@ body {
     width: 70vw;
     margin: 0 auto; }
   article {
-    width: 70vw; }
+    width: 70vw;
+    margin: 0 auto; }
   section {
     width: 33vw; }
   body {
@@ -1042,6 +1109,10 @@ body {
             font-weight: 600;
             padding-right: 5%; }
             .header .row .nav-menu .list-content li:hover {
+              color: #f68773; }
+          .header .row .nav-menu .list-content a {
+            font-size: 12px; }
+            .header .row .nav-menu .list-content a:hover {
               color: #f68773; }
       .header .row .search {
         box-sizing: border-box; }
@@ -1087,6 +1158,60 @@ body {
           padding-left: 7%; }
           .header .row .icon li:hover {
             color: #f68773; }
+  /*---------- menu flottant début ----------*/
+  li {
+    color: #999;
+    padding-left: -20px;
+    list-style: none;
+    font-weight: bold; }
+    li a {
+      color: #999;
+      text-decoration: none; }
+      li a:hover {
+        color: black; }
+  .black {
+    padding-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: none; }
+  .adress {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: none; }
+    .adress a {
+      text-decoration: none;
+      color: #999; }
+      .adress a:hover {
+        color: #333; }
+  .dropbtn {
+    padding-left: 35px;
+    padding-top: 10px;
+    color: #999;
+    font-size: 15px;
+    line-height: 0; }
+  .dropdown {
+    display: inline-block;
+    position: relative; }
+    .dropdown .dropdown-content {
+      display: none;
+      right: 0;
+      display: none;
+      position: absolute;
+      min-width: 300px;
+      background-color: white;
+      margin-left: 20px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      .dropdown .dropdown-content li {
+        border-bottom: solid 1px #d1d1d1;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        margin-right: 20px; }
+  .dropdown:hover .dropdown-content {
+    display: block; }
+  /*---------- menu flottant fin ----------*/
   /*--------------fin du header-----------*/
   .chemin {
     margin-top: 10px;
@@ -1317,7 +1442,7 @@ body {
     margin: 0 auto;
     border-top: solid 1px #c9c9c9;
     width: 70vw;
-    margin-top: 20px; }
+    margin-top: 40px; }
     .infos .menu-description {
       height: 40px;
       border-bottom: solid 1px #c9c9c9;
@@ -1331,7 +1456,7 @@ body {
       .infos .menu-description li {
         display: inline-block;
         align-content: center;
-        margin: 20px auto;
+        margin: 0 auto;
         cursor: pointer;
         text-decoration: none;
         text-align: center;
@@ -1381,7 +1506,8 @@ body {
         max-width: 360px;
         padding-bottom: 30px; }
   .produits-divers {
-    width: 70vw; }
+    width: 70vw;
+    margin-left: 3%; }
     .produits-divers h2 {
       text-align: center;
       font-size: 20px;
@@ -1435,7 +1561,7 @@ body {
         color: #999; }
     footer #footer1 {
       margin-left: 17.5%;
-      margin-right: 17.5%;
+      margin-right: 15.5%;
       display: grid;
       grid-template-columns: 40% 18% 18% 18%;
       column-gap: 2%;
@@ -1462,7 +1588,7 @@ body {
         font-size: 15px;
         line-height: 3em; }
         footer #footer1 .ftcontactstyle .ftcontactpic {
-          padding-bottom: 0.75em; }
+          padding-bottom: 30px; }
         footer #footer1 .ftcontactstyle .fa-map-marker-alt {
           padding-top: 1em;
           vertical-align: top; }
@@ -1472,7 +1598,8 @@ body {
           vertical-align: middle; }
         footer #footer1 .ftcontactstyle .ftaddress {
           display: inline-block;
-          line-height: 1em; }
+          line-height: 1em;
+          font-size: 14px; }
         footer #footer1 .ftcontactstyle .fas {
           font-size: 25px;
           padding: 2px;
@@ -1491,7 +1618,7 @@ body {
         footer #footer1 .listssection .liform {
           list-style-type: none;
           padding-left: 0px;
-          line-height: 2em; }
+          line-height: 30px; }
         footer #footer1 .listssection select {
           margin-top: 1em;
           margin-bottom: 3em; }
