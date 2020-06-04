@@ -11,7 +11,10 @@ pour téléphone */
         padding-bottom: 20px;
     
     }
+
     
+
+
     .header {
         height: 30px;
         padding-top: 5px;
@@ -116,7 +119,89 @@ pour téléphone */
             
             } 
         }
+
+
     }
+
+    /*---------- menu flottant début ----------*/
+
+    li {
+        color: #999;
+        padding-left: -20px;
+        list-style: none;
+        font-weight: bold;
+        
+
+        a {
+            color: #999;
+            text-decoration: none;
+
+                &:hover {
+                    color: black;
+                }
+        }
+    }
+
+    .black {
+        padding-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        border-bottom: none;
+    }
+
+    .adress {
+        color: #999;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #999;
+                &:hover {
+                    color: #333;
+                }
+            }
+    }
+
+    .dropbtn {
+
+        padding-left: 35px;
+        padding-top: 10px;
+        color: #999;
+
+        font-size: 15px;
+        line-height: 0;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+
+        .dropdown-content {
+            right: 0;
+            display: none;
+            position: absolute;
+            min-width: 300px;
+            background-color: white;
+            margin-left: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1243;
+                li {
+                    border-bottom: solid 1px rgb(209, 209, 209);
+                    padding-bottom: 12px;
+                    padding-top: 12px;
+                    margin-right: 20px;
+                }
+        }
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /*---------- menu flottant fin ----------*/
 
 
     body {
@@ -1007,6 +1092,86 @@ pour téléphone */
         padding-bottom: 20px;
         background-color: #F2EDE9;
     }
+
+    /*---------- menu flottant début ----------*/
+
+    li {
+        color: #999;
+        padding-left: -20px;
+        list-style: none;
+        font-weight: bold;
+        
+
+        a {
+            color: #999;
+            text-decoration: none;
+
+                &:hover {
+                    color: black;
+                }
+        }
+    }
+
+    .black {
+        padding-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        border-bottom: none;
+    }
+
+    .adress {
+        color: #999;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #999;
+                &:hover {
+                    color: #333;
+                }
+            }
+    }
+
+    .dropbtn {
+
+        padding-left: 35px;
+        padding-top: 10px;
+        color: #999;
+
+        font-size: 15px;
+        line-height: 0;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+
+        .dropdown-content {
+            right: 0;
+            display: none;
+            position: absolute;
+            min-width: 300px;
+            background-color: white;
+            margin-left: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+                li {
+                    border-bottom: solid 1px rgb(209, 209, 209);
+                    padding-bottom: 12px;
+                    padding-top: 12px;
+                    margin-right: 20px;
+                }
+        }
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /*---------- menu flottant fin ----------*/
     
     .header {
         height: 30px;
@@ -1991,6 +2156,89 @@ pour téléphone */
         background-color: #F2EDE9;
     
     }
+
+    /*---------- menu flottant début ----------*/
+
+    li {
+        color: #999;
+        padding-left: -20px;
+        list-style: none;
+        font-weight: bold;
+        
+
+        a {
+            color: #999;
+            text-decoration: none;
+
+                &:hover {
+                    color: black;
+                }
+        }
+    }
+
+    .black {
+        padding-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        border-bottom: none;
+    }
+
+    .adress {
+        color: #999;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #999;
+                &:hover {
+                    color: #333;
+                }
+            }
+    }
+
+    .dropbtn {
+
+        padding-left: 35px;
+        padding-top: 10px;
+        color: #999;
+
+        font-size: 15px;
+        line-height: 0;
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+
+        .dropdown-content {
+            display: none;
+            right: 0;
+            display: none;
+            position: absolute;
+            min-width: 300px;
+            background-color: white;
+            margin-left: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+                li {
+                    border-bottom: solid 1px rgb(209, 209, 209);
+                    padding-bottom: 12px;
+                    padding-top: 12px;
+                    margin-right: 20px;
+                }
+        }
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+/*---------- menu flottant fin ----------*/
     
     .header {
         height: 50px;

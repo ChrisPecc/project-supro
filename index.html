@@ -24,50 +24,68 @@
         <header>
             <div class="header"> 
                 <div class="row">
-                        <div class="logo">
+                    <div class="logo">
+                        
+                    <a href="./index.html">
+                        <img src="./assets/pictures/homepage/logo.png" alt="supro-01">
+                    </a>
                             
-                            <a href="./index.html">
-                                <img src="./assets/pictures/homepage/logo.png" alt="supro-01">
-                            </a>
-                            
-                        </div>
+                    </div>
  
-                        <div class="nav-menu">
-                            <ul class="list-content">
+                    <div class="nav-menu">
+                        <ul class="list-content">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/shop.html">Shop</a></li>
+                            <li><a href="./pages/product.html">Products</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="./pages/about.html">Blog</a></li>
+                            <li><a href="./pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+    
+ 
+                    <div class="search">
+                        <form>
+                            <input type="search" placeholder="Start Searching...">
+                            <i class="fa fa-search"></i>
+                        </form>                  
+                    </div>
+                     
+                     <div class="icon">
+                        <ul class="icon-list">
+                            <li class="loupe"><i class="fa fa-search"></i></li>
+ 
+                            <li><i class="far fa-user"></i></li>
+                                 
+                            <li><i class="far fa-heart"></i></li>
+                                 
+                            <li><i class="fas fa-shopping-basket"></i></li>
+                                 
+                            <li class="engrenage"><i class="fas fa-cog"></i></li>
+ 
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <span class="fa fa-bars"></span>
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
                                 <li><a href="./index.html">Home</a></li>
                                 <li><a href="./pages/shop.html">Shop</a></li>
-                                <li><a href="./pages/product.html">Products</a></li>
-                                <li><a href="">Pages</a></li>
-                                <li><a href="./pages/about.html">Blog</a></li>
+                                <li><a href="./pages/product.html">Product</a></li>
+                                <li><a href="">Pages</a> </li>
+                                <li><a href="./pages/about.html">About</a> </li>
                                 <li><a href="./pages/contact.html">Contact</a></li>
+                                <h2><span class="black" >Contact us</span></h2> 
+                                <p class="adress">69 Halsey St, Ny 10002, New York,<br>
+                      
+                                United States <a href="mailto:support.center@unero.co">support.center@unero.co</a><br>
+                                (0091) 8547 632521 </p>
                             </ul>
                         </div>
-     
- 
-                        <div class="search">
-                            <form>
-                                <input type="search" placeholder="Start Searching...">
-                                <i class="fa fa-search"></i>
-                            </form>                  
-                        </div>
-                     
- 
-                        <div class="icon">
-                            <ul class="icon-list">
- 
-                                <li class="loupe"><i class="fa fa-search"></i></li>
- 
-                                <li><i class="far fa-user"></i></li>
-                                 
-                                <li><i class="far fa-heart"></i></li>
-                                 
-                                <li><i class="fas fa-shopping-basket"></i></li>
-                                 
-                                <li class="engrenage"><i class="fas fa-cog"></i></li>
- 
-                                <li class="barres"><i class="fas fa-bars"></i></li>
-                            </ul>
-                        </div>
+                    </div>
                 </div>
             </div>
  
@@ -575,7 +593,7 @@
                 <div id="languages" class="listssection">
                     <h3 class="fttitle">Language</h3>
                     <form action="">
-                        <select name="currency" id="moneyselector">
+                        <select name="currency" id="languageselector">
                             <option value="english" selected>English</option>
                             <option value="french">French</option>
                             <option value="german">German</option>
@@ -586,7 +604,7 @@
                 <div id="currency" class="listssection">
                     <h3 class="fttitle">Currency</h3>
                     <form action="">
-                        <select name="language" id="languageselector">
+                        <select name="language" id="moneyselector">
                             <option value="dollar" selected>USD</option>
                             <option value="euro">Euro</option>
                             <option value="pound">Pound</option>
