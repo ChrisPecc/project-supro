@@ -1186,6 +1186,7 @@ body {
       .adress a:hover {
         color: #333; }
   .dropbtn {
+    display: none;
     padding-left: 35px;
     padding-top: 10px;
     color: #999;
