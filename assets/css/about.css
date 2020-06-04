@@ -1,4 +1,5 @@
 body {
+  margin-left:0;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05em;
   width: 100vw;
@@ -6,7 +7,6 @@ body {
 
 /*Header*/
 header {
-  width: 100vw;
   padding-bottom: 20px; }
 
 .header {
@@ -18,17 +18,30 @@ header {
   .header .row {
     display: flex; }
     .header .row .logo {
-      padding: 0 10vw 0 3vw;
-      margin-top: -20px; }
+      padding: 0 10vw 0 3vw; }
       .header .row .logo img {
         width: 5vw; }
     .header .row .nav-menu {
-      padding-right: 7vw; }
+       }
       .header .row .nav-menu .list-content {
         width: 44vw;
         list-style-type: none;
         margin: 0;
         padding: 0; }
+        .list-link a
+        {
+          color:black !important;
+        }
+        .list-link a:hover
+        {
+          color: #f68773 !important;
+        }
+        .list-link a:active
+        {
+          color: #f68773 !important;
+        }
+        
+
         .header .row .nav-menu .list-content li {
           display: inline;
           font-size: 12px;
@@ -89,6 +102,7 @@ p {
 
 a {
   color: #999 !important;
+  text-decoration: none;
 }
 
 .apagenav {
@@ -96,10 +110,10 @@ a {
   flex-direction: column;
   }
 
-.atitle {
-  
-
- }
+.atitle
+{margin-bottom: 0px;
+margin-top: 0px;
+}
 
 .title1
 {color: white;
@@ -110,12 +124,15 @@ text-align: center;
 line-height:100px;
 font-size: 22px;
 font-weight: bold;
+margin-block-start: 0em;
+margin-block-end: 0em;
 }
     
 .anav {
   height: 40px;
+  line-height: 40px;
+  font-size: 10px;
   background-color: #F6F6F8;
-  padding-top: 14px;
   padding-left: 300px; }
 
 .abiggrid {
@@ -351,8 +368,8 @@ background-size: 15%;
 .alogoitm
 {
   width: 120px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 0px;
   background-color: white;
   height: 70px;
   text-align: center;
