@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bc2ec6c4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <!-- nav menu for desktop -->
+
+        <div class="header">
+            <div class="row">
+                <div class="col-md-2 text-left">
+                    <div class="logo">
+                        <h1>
+                            <a href="#">
+                                <img src="../assets/images/shop/logo.png" alt="supro-01">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="nav-menu font-weight-bold">
+                        <ul class="d-flex justify-content-around list-unstyled">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/shop.html">Shop</a></li>
+                            <li><a href="../pages/product.html">Products</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="../pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-xs-12 text-right" id="searching">
+                    <div class="search">
+                        <form>
+                            <input type="search" placeholder="Start Searching...">
+                            <i class="fa fa-search"></i>
+                        </form>                  
+                    </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="icon">
+                        <ul class="d-flex list-unstyled">
+                            <li>
+                                <i class="fal fa-user"></i>
+                            </li>
+                            <li>
+                                <i class="fal fa-heart"></i>
+                            </li>
+                            <li>
+                                <i class="fal fa-shopping-cart"></i>
+                            </li>
+                            <li>
+                                <i class="fal fa-cog"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav menu for tablet and mobile -->
+
+        <div class="row tablet-header">
+            <div class="col-sm-12 d-flex justify-content-between mobile-0-padding">
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <span class="fa fa-search"></span>
+                        <span class="fa fa-bars"></span>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li><hr>
+                            <li><a href="../pages/shop.html">Shop</a></li><hr>
+                            <li><a href="../pages/product.html">Collection</a></li><hr>
+                            <li><a href="#">Pages</a></li><hr>
+                            <li><a href="#">Blog</a></li><hr>
+                            <li><a href="../pages/contact.html">Contact</a></li><hr><br>
+                            <li class="black">Contact us</li><br>
+                            <li class="adress">69 Halsey St, Ny 10002, New York,<br>
+                            United States support.center@unero.co<br>
+                            (0091) 8547 632521</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <h1>
+                        <a href="#">
+                            <img src="../assets/images/shop/logo.png" alt="supro-01">
+                        </a>
+                    </h1>
+                </div>
+                <div class="dropbtn">
+                    <span class="fal fa-shopping-cart"></span>
+                    <span class="fal fa-user"></span>
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+      <div class="tablette-path text-center">
+        <h2 id="h2">Shoes</h2>
+        <div class="path align-items-center">
+            <a style="padding-left: 22px;">Home</a>
+            <span class="fas fa-circle"></span>
+            <a>Fashion</a>
+            <span class="fas fa-circle"></span>
+            <a>Shoes</a>
+        </div>
+      </div>
+
+      <div class="row tablette-filter">
+          <div class="col-sm-4 col-4">
+            <a href="#">FILTER</a>
+          </div>
+          <div class="col-sm-8 col-8 tablette-icon">
+            <i class="fas fa-border-none"></i>
+            <i class="fal fa-list-ul"></i>
+          </div>
+      </div>
+
+      
+    </header>
+
+    <main class="container">
+
+            <div class="path tablette-remove">
+                <h2>Home</h2>
+                <span>.</span>
+                <h2>Fashion</h2>
+                <span>.</span>
+                <h2>Shoes</h2>
+            </div>
+       
+        <div class="row option">
+
+            <div class="col-md-3 tablette-remove">
+                <h2>Shoes</h2>
+            </div>
+            <div class="col-md-6 col2 mb-2 pb-3 rowOptionModified">
+                <div id="items">
+                    <h3>Items 1-12 of 36</h3>
+                </div>
+                <div id="sortBy">
+                    <h3>Sort By <span>Position</span></h3>
+                </div>
+                <div id="icon1">
+                    <i class="fal fa-chevron-down"></i>
+                    <i class="fal fa-arrow-up"></i>
+                </div>
+                <div id="icon2">
+                    <i class="fas fa-border-none"></i>
+                    <i class="fal fa-list-ul"></i>
+                </div>
+            </div>
+
+            <!-- right settings 1st part -->
+
+            <div class="col-md-3 settings">
+                <h2 id="shopBy" class="mb-3">Shop By</h2>
+                <h3 class="h3rs pb-3">COLOR</h3>
+            </div>
+
+            <!-- end right settings 1st part  -->
+
+        </div>
+
+            <!-- Products with images -->
+
+        <div class="row">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/calvin.jpg" class="mw-100" alt="Sac à main">
+                <div class="tablette-text-left">
+                    <p class="mt-4 mb-0">Calvin Klein Logo Sweatpants</p>
+                    <p class="prix mt-1">$86.00</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/short.jpg" class="mw-100" alt="Sweatshirt bleu">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Short Sleeved Hoodie</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mb-0 mt-1">$59.00</p>
+                </div>
+                <div class="tablette-list-left">
+                    <ul class="round mt-1">
+                        <li>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/woleen.jpg" class="mw-100" alt="Blouse bleu">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Woleen Tee</p>
+                    <p class="prix mt-1">$59.00</p>
+                </div>
+            </div>
+
+            <!-- right settings 2nd part -->
+
+            <div class="col-md-3 settings">
+                
+                <ul class="roundColor pl-0 mb-5">
+                    <li class="d-flex align-items-center">
+                        <i class="fas fa-circle"></i>
+                        <label class="pl-2 m-0">Black</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="fas fa-circle" style="color: blue;"></i>
+                        <label class="pl-2 m-0">Blue</label>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="fas fa-circle" style="color: brown;"></i>
+                        <label class="pl-2 m-0">Brown</label>
+                    </li>
+                </ul>
+
+                <div class="mb-5">
+                    <h3 class="h3rs pb-2">SIZE</h3>
+                    <ul class="d-flex sizeSettings pl-0">
+                        <li>
+                            <p>XS</p>
+                        </li>
+                        <li class="pl-1">
+                            <p>S</p>
+                        </li>
+                        <li class="pl-1">
+                            <p>M</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="h3rs pb-2">PRICE</h3>
+                    <input type="text" class="js-range-slider" name="my_range" value=""
+                        data-type="double"
+                        data-min="29"
+                        data-max="95.99"
+                        data-from="29"
+                        data-to="95.99"
+                        data-grid="true"
+                    />
+                </div>
+
+                <h3 class="h3rs mt-5 pb-2">BRAND</h3>
+                <div class="d-block brand d-flex align-items-center justify-content-between pb-2">
+                    <label class="m-0">Creative</label>
+                    <input type="checkbox"/>
+                </div>
+                <div class="d-block brand d-flex align-items-center justify-content-between">
+                    <label class="m-0">Wellness</label>
+                    <input type="checkbox"/>
+                </div>
+            </div>
+
+            <!-- end right settings 2nd part -->
+
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/brown.jpg" class="mw-100" alt="Lunette de soleil">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Brown Jacket</p>
+                    <div class="d-flex mt-1">
+                        <p class="prix" style="text-decoration: line-through;">$89.00</p>
+                        <p style="color: black !important; padding-left: 15px;">$80.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/pink.jpg" class="mw-100" alt="Jupe rouge">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Pink Leather Watch</p>
+                    <p class="prix mt-1 mb-0">$95.99</p>
+                </div>
+                <div class="tablette-list-left">
+                    <ul class="size mt-1">
+                        <li>
+                            <P>M</P>
+                        </li>
+                        <li>
+                            <p>XS</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center">
+                <img src="../assets/images/shop/cuffed.jpg" class="mw-100" alt="Veste noir">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Cuffed Beanie</p>
+                    <p class="prix mt-1">$68.00</p>
+                </div>
+            </div>
+
+            <!-- right settings 3rd part -->
+
+            <div class="col-md-3 compareProd mt-5 settings">
+               <h3 class="pb-3">Compare Products</h3>
+               <p>You have no items to compare.</p>
+            </div>
+
+            <!-- end right settings 3rd part -->
+
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/short.jpg" class="mw-100" alt="sweatshirt bleu">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Metallic Frame Glasses Trandy</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mt-1">$60.50</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/calvin.jpg" class="mw-100" alt="Sac à main">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Flower Designs Blouse</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mt-1">$89.90</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center">
+                <img src="../assets/images/shop/leather.jpg" class="mw-100" alt="Chaussure noir">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Leather Shop Bag</p>
+                    <p class="prix mt-1">$59.90</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/woleen.jpg" class="mw-100" alt="Blouse bleu">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Denim Jacket</p>
+                    <span class="stars mb-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <p class="prix mt-1">$45.00</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center tablette-space-img">
+                <img src="../assets/images/shop/hooded.jpg" class="mw-100" alt="Chaussure été">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Hooded Sweatshirt</p>
+                    <p class="prix mt-1">$55.00</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 tablette-content-center">
+                <img src="../assets/images/shop/autumn.jpg" class="mw-100" alt="Lunette de soleil">
+                <div class="tablette-text-left">
+                    <p class="mb-0 mt-4">Autumn Coat with Pockets</p>
+                    <p class="prix mt-1">$33.00</p>
+                </div>
+            </div>
+        </div>
+
+            <!-- Products with images end -->
+
+            <!-- page selector -->
+
+        <div class="row">
+            <div class="col-md-9 nbrSelector d-flex justify-content-center mt-5 pt-3">
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <label>0<span class="pb-1" style="border-bottom: 1px solid black;">1</span></label>
+                    </li>
+                    <li>
+                        <label>02</label>
+                    </li>
+                    <li>
+                        <label>03</label>
+                    </li>
+                    <li>
+                        <i class="fal fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- end page selector -->
+
+            <!-- footer -->
+
+        <div class="row">
+            <div class="col-md-7 d-flex justify-content-center mt-5">
+                <ul class="socialMedia d-flex">
+                    <li>FACEBOOK</li>
+                    <li>TWITTER</li>
+                    <li>GOOGLE</li>
+                    <li>YOUTUBE</li>
+                    <li>INSTAGRAM</li>
+                </ul>
+            </div>
+    
+            <div class="col-md-5 payment mt-5 d-flex justify-content-end">
+                <ul class="d-flex">
+                    <li class="pr-1">
+                        <img src="../assets/images/shop/payment1.png" alt="payment1">
+                    </li>
+                    <li class="pr-1">
+                        <img src="../assets/images/shop/payment2.png" alt="payment2">
+                    </li>
+                    <li class="pr-1">
+                        <img src="../assets/images/shop/payment3.png" alt="payment3">
+                    </li>
+                    <li class="pr-1">
+                        <img src="../assets/images/shop/payment4.png" alt="payment4">
+                    </li>
+                    <li>
+                        <img src="../assets/images/shop/payment5.png" alt="payment5">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- end footer -->
+        
+    </main>
+
+    <div class="d-flex justify-content-end top">
+        <a href="#"><i class="fal fa-chevron-circle-up"></i></a>
+    </div>
+
+    <script>
+        
+        $(".js-range-slider").ionRangeSlider({
+            grid: true,
+            min: 29,
+            max: 95.99,
+            from: 29,
+            to: 95.99,
+            prefix: "$",
+        });
+    
+
+    </script>
+</body>
+</html>
