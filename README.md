@@ -27,3 +27,5 @@ Les différents membres de l'équipe on principalement travaillé sur:
 * Christophe Pecceu : footer, "homepage", page "contact"
 
 ## Lien vers la page de démo
+
+https://chrispecc.github.io/project-supro/
