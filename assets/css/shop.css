@@ -30,7 +30,8 @@ body {
   .search input {
     border: none;
     position: absolute;
-    left: 15px; }
+    left: 15px;
+    outline: 0; }
   .search i {
     margin-right: 20px;
     color: #d1cfcf; }
@@ -45,6 +46,8 @@ body {
   .icon i {
     color: #949799;
     font-size: 20px; }
+    .icon i:hover {
+      color: #f68873; }
 
 .path {
   display: flex; }
@@ -255,7 +258,10 @@ body {
         padding-left: 10px; }
       .tablette-filter .tablette-icon i {
         color: #999;
-        font-size: 20px; } }
+        font-size: 20px; }
+  .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important; } }
 
 @media only screen and (max-width: 380px) {
   .path {
